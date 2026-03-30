@@ -133,7 +133,7 @@ Open the `main.nf` workflow file to examine the workflow stub we're giving you a
 #!/usr/bin/env nextflow
 
 workflow  {
-
+    main:
     ch_datasheet = channel.fromPath("./data/datasheet.csv")
 
 }
@@ -151,9 +151,9 @@ Make the following changes to add a `splitCsv()` operation to the channel constr
 
 === "After"
 
-    ```groovy title="main.nf" linenums="3" hl_lines="4-5"
+    ```groovy title="main.nf" linenums="3" hl_lines="5-6"
     workflow  {
-
+        main:
         ch_datasheet = channel.fromPath("./data/datasheet.csv")
             .splitCsv(header: true)
             .view()
@@ -165,7 +165,7 @@ Make the following changes to add a `splitCsv()` operation to the channel constr
 
     ```groovy title="main.nf" linenums="3"
     workflow  {
-
+        main:
         ch_datasheet = channel.fromPath("./data/datasheet.csv")
 
     }
@@ -254,9 +254,9 @@ Make the following edits to the workflow:
 
 === "After"
 
-    ```groovy title="main.nf" linenums="3" hl_lines="5-7"
+    ```groovy title="main.nf" linenums="3" hl_lines="6-8"
     workflow  {
-
+        main:
         ch_datasheet = channel.fromPath("./data/datasheet.csv")
             .splitCsv(header: true)
             .map{ row ->
@@ -271,7 +271,7 @@ Make the following edits to the workflow:
 
     ```groovy title="main.nf" linenums="3"
     workflow  {
-
+        main:
         ch_datasheet = channel.fromPath("./data/datasheet.csv")
             .splitCsv(header: true)
             .view()
@@ -1084,14 +1084,23 @@ In the main workflow, make the following code changes:
             ch_languages.map { meta, file -> file },
             ch_languages.map { meta, file -> meta.character }
         )
+
+        publish:
+        cowpy_art = COWPY.out
+    }
+
+    output {
+        cowpy_art {
+        }
+    }
     ```
 
 === "Before"
 
     ```groovy title="main.nf" linenums="34"
         // Temporary: access the file and character
-        ch_languages.map { meta, file -> [file, meta.character] }
-            .view()
+        ch_languages.map { meta, file -> file }.view { file -> "File: " + file }
+        ch_languages.map { meta, file -> meta.character }.view { character -> "Character: " + character }
     ```
 
 You see we simply copy the two map operations (minus the `.view()` statements) as the inputs to the process call.
@@ -1268,18 +1277,36 @@ Make the following edits to the main workflow:
 === "After"
 
     ```groovy title="main.nf" linenums="34" hl_lines="2"
-    // Run cowpy to generate ASCII art
-    COWPY(ch_languages)
+        // Run cowpy to generate ASCII art
+        COWPY(ch_languages)
+
+        publish:
+        cowpy_art = COWPY.out
+    }
+
+    output {
+        cowpy_art {
+        }
+    }
     ```
 
 === "Before"
 
     ```groovy title="main.nf" linenums="34" hl_lines="3-4"
-    // Run cowpy to generate ASCII art
-    COWPY(
-        ch_languages.map { meta, file -> file },
-        ch_languages.map { meta, file -> meta.character }
-    )
+        // Run cowpy to generate ASCII art
+        COWPY(
+            ch_languages.map { meta, file -> file },
+            ch_languages.map { meta, file -> meta.character }
+        )
+
+        publish:
+        cowpy_art = COWPY.out
+    }
+
+    output {
+        cowpy_art {
+        }
+    }
     ```
 
 That simplifies the call significantly!
