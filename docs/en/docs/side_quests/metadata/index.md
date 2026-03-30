@@ -1070,9 +1070,45 @@ _The file paths and character values may come out in a different order in your o
 
 This confirms we're able to access the file and the character for each element in the channel.
 
-#### 3.2.3. Call the `COWPY` process
+#### 3.2.3. Set up workflow outputs
 
-Now let's put it all together and actually call the `COWPY` process on the `ch_languages` channel.
+Before we call the process, we need to set up the workflow to publish outputs to a results directory.
+Nextflow uses a `publish:` section inside the workflow to declare which outputs to publish, and an `output {}` block to configure where they go.
+
+Add the following at the end of your workflow and after the closing brace:
+
+=== "After"
+
+    ```groovy title="main.nf" linenums="34" hl_lines="4-6 9-11"
+        // Temporary: access the file and character
+        ch_languages.map { meta, file -> file }.view { file -> "File: " + file }
+        ch_languages.map { meta, file -> meta.character }.view { character -> "Character: " + character }
+
+        publish:
+        cowpy_art = channel.empty()
+    }
+
+    output {
+        cowpy_art {
+        }
+    }
+    ```
+
+=== "Before"
+
+    ```groovy title="main.nf" linenums="34"
+        // Temporary: access the file and character
+        ch_languages.map { meta, file -> file }.view { file -> "File: " + file }
+        ch_languages.map { meta, file -> meta.character }.view { character -> "Character: " + character }
+    }
+    ```
+
+We're using `channel.empty()` as a placeholder for now, since we haven't called the `COWPY` process yet.
+We'll connect the real output in the next step.
+
+#### 3.2.4. Call the `COWPY` process
+
+Now we can put it all together and actually call the `COWPY` process on the `ch_languages` channel, and wire up its output to be published.
 
 In the main workflow, make the following code changes:
 
@@ -1101,10 +1137,18 @@ In the main workflow, make the following code changes:
         // Temporary: access the file and character
         ch_languages.map { meta, file -> file }.view { file -> "File: " + file }
         ch_languages.map { meta, file -> meta.character }.view { character -> "Character: " + character }
+
+        publish:
+        cowpy_art = channel.empty()
+    }
+
+    output {
+        cowpy_art {
+        }
+    }
     ```
 
-You see we simply copy the two map operations (minus the `.view()` statements) as the inputs to the process call.
-Just make sure you don't forget the comma between them!
+We replaced the temporary view operations with the actual `COWPY` process call, and updated the `publish:` section to use `COWPY.out` instead of the placeholder.
 
 It's a bit clunky, but we'll see how to make that better in the next section.
 
