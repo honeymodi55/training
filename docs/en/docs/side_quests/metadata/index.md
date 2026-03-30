@@ -136,6 +136,13 @@ workflow  {
     main:
     ch_datasheet = channel.fromPath("./data/datasheet.csv")
 
+    publish:
+    cowpy_art = channel.empty()
+}
+
+output {
+    cowpy_art {
+    }
 }
 ```
 
@@ -151,24 +158,16 @@ Make the following changes to add a `splitCsv()` operation to the channel constr
 
 === "After"
 
-    ```groovy title="main.nf" linenums="3" hl_lines="5-6"
-    workflow  {
-        main:
+    ```groovy title="main.nf" linenums="5" hl_lines="3-4"
         ch_datasheet = channel.fromPath("./data/datasheet.csv")
             .splitCsv(header: true)
             .view()
-
-    }
     ```
 
 === "Before"
 
-    ```groovy title="main.nf" linenums="3"
-    workflow  {
-        main:
+    ```groovy title="main.nf" linenums="5"
         ch_datasheet = channel.fromPath("./data/datasheet.csv")
-
-    }
     ```
 
 Note that we're using the `header: true` option to tell Nextflow to read the first row of the CSV file as the header row.
@@ -254,29 +253,21 @@ Make the following edits to the workflow:
 
 === "After"
 
-    ```groovy title="main.nf" linenums="3" hl_lines="6-8"
-    workflow  {
-        main:
+    ```groovy title="main.nf" linenums="5" hl_lines="4-6"
         ch_datasheet = channel.fromPath("./data/datasheet.csv")
             .splitCsv(header: true)
             .map{ row ->
                 row.character
             }
             .view()
-
-    }
     ```
 
 === "Before"
 
-    ```groovy title="main.nf" linenums="3"
-    workflow  {
-        main:
+    ```groovy title="main.nf" linenums="5"
         ch_datasheet = channel.fromPath("./data/datasheet.csv")
             .splitCsv(header: true)
             .view()
-
-    }
     ```
 
 Now run the workflow again:
@@ -1070,45 +1061,9 @@ _The file paths and character values may come out in a different order in your o
 
 This confirms we're able to access the file and the character for each element in the channel.
 
-#### 3.2.3. Set up workflow outputs
+#### 3.2.3. Call the `COWPY` process
 
-Before we call the process, we need to set up the workflow to publish outputs to a results directory.
-Nextflow uses a `publish:` section inside the workflow to declare which outputs to publish, and an `output {}` block to configure where they go.
-
-Add the following at the end of your workflow and after the closing brace:
-
-=== "After"
-
-    ```groovy title="main.nf" linenums="34" hl_lines="4-6 9-11"
-        // Temporary: access the file and character
-        ch_languages.map { meta, file -> file }.view { file -> "File: " + file }
-        ch_languages.map { meta, file -> meta.character }.view { character -> "Character: " + character }
-
-        publish:
-        cowpy_art = channel.empty()
-    }
-
-    output {
-        cowpy_art {
-        }
-    }
-    ```
-
-=== "Before"
-
-    ```groovy title="main.nf" linenums="34"
-        // Temporary: access the file and character
-        ch_languages.map { meta, file -> file }.view { file -> "File: " + file }
-        ch_languages.map { meta, file -> meta.character }.view { character -> "Character: " + character }
-    }
-    ```
-
-We're using `channel.empty()` as a placeholder for now, since we haven't called the `COWPY` process yet.
-We'll connect the real output in the next step.
-
-#### 3.2.4. Call the `COWPY` process
-
-Now we can put it all together and actually call the `COWPY` process on the `ch_languages` channel, and wire up its output to be published.
+Now we can put it all together and actually call the `COWPY` process on the `ch_languages` channel.
 
 In the main workflow, make the following code changes:
 
@@ -1123,12 +1078,6 @@ In the main workflow, make the following code changes:
 
         publish:
         cowpy_art = COWPY.out
-    }
-
-    output {
-        cowpy_art {
-        }
-    }
     ```
 
 === "Before"
@@ -1140,15 +1089,9 @@ In the main workflow, make the following code changes:
 
         publish:
         cowpy_art = channel.empty()
-    }
-
-    output {
-        cowpy_art {
-        }
-    }
     ```
 
-We replaced the temporary view operations with the actual `COWPY` process call, and updated the `publish:` section to use `COWPY.out` instead of the placeholder.
+We replaced the temporary view operations with the actual `COWPY` process call, and updated the `publish:` section to wire up `COWPY.out` for publishing.
 
 It's a bit clunky, but we'll see how to make that better in the next section.
 
@@ -1326,12 +1269,6 @@ Make the following edits to the main workflow:
 
         publish:
         cowpy_art = COWPY.out
-    }
-
-    output {
-        cowpy_art {
-        }
-    }
     ```
 
 === "Before"
@@ -1345,12 +1282,6 @@ Make the following edits to the main workflow:
 
         publish:
         cowpy_art = COWPY.out
-    }
-
-    output {
-        cowpy_art {
-        }
-    }
     ```
 
 That simplifies the call significantly!
