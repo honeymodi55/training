@@ -26,6 +26,7 @@ params {
     input: String = "My name is Honey"
 }
 
+
 process helloWorld {
 
     // publishDir is an old way of saving outputs to another directory, do not use it, instead use the output{} block
@@ -55,3 +56,4 @@ output {
         mode 'copy'
     }
 }
+
