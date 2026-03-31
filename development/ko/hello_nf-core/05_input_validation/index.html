@@ -4493,10 +4493,10 @@ nf-schema는 모든 Nextflow 워크플로우에서 작동하지만, 모든 nf-co
     C --&gt;|✓ Valid| E[Pipeline executes]
     C --&gt;|✗ Invalid| F[Error: Fix input data]</code></pre>
 <p>검증은 파이프라인 process가 실행되기 <strong>전에</strong> 발생하여 빠른 피드백을 제공하고 컴퓨팅 시간 낭비를 방지해야 합니다.</p>
-<p>이제 이러한 원칙을 실제로 적용해 보겠습니다. 매개변수 검증부터 시작하겠습니다.</p>
+<p>이제 이러한 원칙을 실제로 적용합니다. 매개변수 검증부터 시작하겠습니다.</p>
 <hr />
 <h2 id="1-nextflow_schemajson">1. 매개변수 검증 (nextflow_schema.json)<a class="headerlink" href="#1-nextflow_schemajson" title="Permanent link">&para;</a></h2>
-<p>파이프라인에 매개변수 검증을 추가하는 것부터 시작하겠습니다. 이는 <code>--input</code>, <code>--outdir</code>, <code>--batch</code>와 같은 명령줄 플래그를 검증합니다.</p>
+<p>파이프라인에 매개변수 검증을 추가하는 것부터 시작합니다. 이는 <code>--input</code>, <code>--outdir</code>, <code>--batch</code>와 같은 명령줄 플래그를 검증합니다.</p>
 <h3 id="11">1.1. 입력 파일 검증을 건너뛰도록 검증 구성<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
 <p>nf-core 파이프라인 템플릿은 이미 nf-schema가 설치되고 구성되어 제공됩니다:</p>
 <ul>

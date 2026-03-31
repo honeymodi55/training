@@ -297,6 +297,10 @@
          <lastmod>2026-03-31</lastmod>
     </url>
     <url>
+         <loc>https://training.nextflow.io/tr/side_quests/orientation/</loc>
+         <lastmod>2026-03-31</lastmod>
+    </url>
+    <url>
          <loc>https://training.nextflow.io/tr/side_quests/debugging/</loc>
          <lastmod>2026-03-31</lastmod>
     </url>
@@ -306,30 +310,6 @@
     </url>
     <url>
          <loc>https://training.nextflow.io/tr/side_quests/essential_scripting_patterns/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
-         <loc>https://training.nextflow.io/tr/side_quests/metadata/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
-         <loc>https://training.nextflow.io/tr/side_quests/nf-test/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
-         <loc>https://training.nextflow.io/tr/side_quests/orientation/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
-         <loc>https://training.nextflow.io/tr/side_quests/splitting_and_grouping/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
-         <loc>https://training.nextflow.io/tr/side_quests/workflows_of_workflows/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
-         <loc>https://training.nextflow.io/tr/side_quests/working_with_files/</loc>
          <lastmod>2026-03-31</lastmod>
     </url>
     <url>
@@ -341,43 +321,11 @@
          <lastmod>2026-03-31</lastmod>
     </url>
     <url>
-         <loc>https://training.nextflow.io/tr/training_collections/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
-         <loc>https://training.nextflow.io/tr/training_collections/architects_toolkit_1/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
-         <loc>https://training.nextflow.io/tr/side_quests/dev_environment/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
-         <loc>https://training.nextflow.io/tr/side_quests/essential_scripting_patterns/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
          <loc>https://training.nextflow.io/tr/side_quests/metadata/</loc>
          <lastmod>2026-03-31</lastmod>
     </url>
     <url>
-         <loc>https://training.nextflow.io/tr/side_quests/splitting_and_grouping/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
          <loc>https://training.nextflow.io/tr/side_quests/nf_test/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
-         <loc>https://training.nextflow.io/tr/side_quests/workflows_of_workflows/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
-         <loc>https://training.nextflow.io/tr/side_quests/working_with_files/</loc>
-         <lastmod>2026-03-31</lastmod>
-    </url>
-    <url>
-         <loc>https://training.nextflow.io/tr/side_quests/debugging/</loc>
          <lastmod>2026-03-31</lastmod>
     </url>
     <url>
@@ -409,11 +357,31 @@
          <lastmod>2026-03-31</lastmod>
     </url>
     <url>
+         <loc>https://training.nextflow.io/tr/side_quests/plugin_development/next_steps/</loc>
+         <lastmod>2026-03-31</lastmod>
+    </url>
+    <url>
          <loc>https://training.nextflow.io/tr/side_quests/plugin_development/summary/</loc>
          <lastmod>2026-03-31</lastmod>
     </url>
     <url>
-         <loc>https://training.nextflow.io/tr/side_quests/plugin_development/next_steps/</loc>
+         <loc>https://training.nextflow.io/tr/side_quests/splitting_and_grouping/</loc>
+         <lastmod>2026-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://training.nextflow.io/tr/side_quests/workflows_of_workflows/</loc>
+         <lastmod>2026-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://training.nextflow.io/tr/side_quests/working_with_files/</loc>
+         <lastmod>2026-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://training.nextflow.io/tr/training_collections/</loc>
+         <lastmod>2026-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://training.nextflow.io/tr/training_collections/architects_toolkit_1/</loc>
          <lastmod>2026-03-31</lastmod>
     </url>
 </urlset>

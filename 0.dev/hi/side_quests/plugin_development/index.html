@@ -2347,7 +2347,7 @@
   <span class="md-ellipsis">
     
   
-    Development Environment
+    डेवलपमेंट एनवायरनमेंट
   
 
     
@@ -2375,7 +2375,7 @@
   <span class="md-ellipsis">
     
   
-    Essential Nextflow Scripting Patterns
+    आवश्यक Nextflow स्क्रिप्टिंग पैटर्न
   
 
     
@@ -2403,7 +2403,7 @@
   <span class="md-ellipsis">
     
   
-    Metadata and meta maps
+    मेटाडेटा और मेटा मैप्स
   
 
     
@@ -2431,7 +2431,7 @@
   <span class="md-ellipsis">
     
   
-    Splitting and Grouping
+    विभाजन और समूहीकरण
   
 
     
@@ -2459,7 +2459,7 @@
   <span class="md-ellipsis">
     
   
-    Testing with nf-test
+    nf-test के साथ परीक्षण
   
 
     
@@ -2487,7 +2487,7 @@
   <span class="md-ellipsis">
     
   
-    Workflows of Workflows
+    वर्कफ़्लो के वर्कफ़्लो
   
 
     
@@ -2515,7 +2515,7 @@
   <span class="md-ellipsis">
     
   
-    File input processing
+    फ़ाइल इनपुट प्रोसेसिंग
   
 
     
@@ -2543,7 +2543,7 @@
   <span class="md-ellipsis">
     
   
-    Debugging Workflows
+    वर्कफ़्लो डीबगिंग
   
 
     
@@ -2975,7 +2975,7 @@
   <span class="md-ellipsis">
     
   
-    Part 1: Plugin Basics
+    भाग 1: Plugin की मूल बातें
   
 
     
@@ -3003,7 +3003,7 @@
   <span class="md-ellipsis">
     
   
-    Part 2: Create a Plugin Project
+    भाग 2: एक Plugin प्रोजेक्ट बनाओ
   
 
     
@@ -3031,7 +3031,7 @@
   <span class="md-ellipsis">
     
   
-    Part 3: Custom Functions
+    भाग 3: कस्टम फ़ंक्शन
   
 
     
@@ -3059,7 +3059,7 @@
   <span class="md-ellipsis">
     
   
-    Part 4: Testing
+    भाग 4: परीक्षण
   
 
     
@@ -3087,7 +3087,7 @@
   <span class="md-ellipsis">
     
   
-    Part 5: Trace Observers
+    भाग 5: Trace Observers
   
 
     
@@ -3115,7 +3115,7 @@
   <span class="md-ellipsis">
     
   
-    Part 6: Configuration
+    भाग 6: कॉन्फ़िगरेशन
   
 
     
@@ -3143,7 +3143,7 @@
   <span class="md-ellipsis">
     
   
-    Summary
+    सारांश
   
 
     
@@ -3171,7 +3171,7 @@
   <span class="md-ellipsis">
     
   
-    Next Steps
+    अगले कदम
   
 
     
@@ -3997,57 +3997,52 @@
  
 
 <h1 id="plugin-development">Plugin Development<a class="headerlink" href="#plugin-development" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Translation in Progress</p>
-<p>This page has not yet been translated into your language.
-You are viewing the original English content.</p>
-<p>Want to help? See our <a href="https://github.com/nextflow-io/training/blob/master/TRANSLATING.md">translation guide</a>.</p>
-</div>
-<p>Nextflow's plugin system allows you to extend the language with custom functions, monitoring hooks, execution backends, and more.
-Plugins enable the community to add features to Nextflow without modifying its core, making them ideal for sharing reusable functionality across pipelines.</p>
-<p>During this training, you will learn how to use existing plugins and optionally create your own.</p>
+<p><span class="ai-translation-notice"><span class="twemoji ai-translation-notice-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2z"/></svg></span> AI-सहायता प्राप्त अनुवाद - <a href="https://github.com/nextflow-io/training/blob/master/TRANSLATING.md">अधिक जानें और सुधार सुझाएं</a></span></p>
+<p>Nextflow का plugin सिस्टम तुम्हें भाषा को custom फ़ंक्शन, monitoring hooks, execution backends, और बहुत कुछ के साथ extend करने की सुविधा देता है।
+Plugins समुदाय को Nextflow के core को modify किए बिना उसमें features जोड़ने में सक्षम बनाते हैं, जिससे वे पाइपलाइनों में reusable functionality साझा करने के लिए आदर्श बन जाते हैं।</p>
+<p>इस प्रशिक्षण के दौरान, तुम सीखोगे कि मौजूदा plugins का उपयोग कैसे करें और वैकल्पिक रूप से अपना खुद का plugin कैसे बनाएं।</p>
 <h2 id="audience-prerequisites">Audience &amp; prerequisites<a class="headerlink" href="#audience-prerequisites" title="Permanent link">&para;</a></h2>
-<p>Part 1 covers using existing plugins and is relevant to all Nextflow users.
-Parts 2-6 cover building your own plugins and involve Groovy code and build tools.
-No prior Java or Groovy experience is required.</p>
+<p>Part 1 में मौजूदा plugins का उपयोग शामिल है और यह सभी Nextflow उपयोगकर्ताओं के लिए प्रासंगिक है।
+Parts 2-6 में अपना खुद का plugin बनाना शामिल है और इसमें Groovy कोड और build tools का उपयोग होता है।
+पहले से Java या Groovy का अनुभव होना ज़रूरी नहीं है।</p>
 <p><strong>Prerequisites</strong></p>
 <ul>
-<li>A GitHub account OR a local installation as described <a href="../../envsetup/02_local">here</a>.</li>
-<li>Completed the <a href="../../hello_nextflow/">Hello Nextflow</a> course or equivalent.</li>
-<li>Java 21 or later (included in the training environment; only needed for Parts 2-6).</li>
+<li>एक GitHub account या <a href="../../envsetup/02_local">यहाँ</a> बताए अनुसार लोकल इंस्टॉलेशन।</li>
+<li><a href="../../hello_nextflow/">Hello Nextflow</a> कोर्स पूरा किया हो या समकक्ष अनुभव हो।</li>
+<li>Java 21 या उससे नया संस्करण (प्रशिक्षण वातावरण में शामिल है; केवल Parts 2-6 के लिए आवश्यक है)।</li>
 </ul>
 <p><strong>Working directory:</strong> <code>side-quests/plugin_development</code></p>
 <h2 id="learning-objectives">Learning objectives<a class="headerlink" href="#learning-objectives" title="Permanent link">&para;</a></h2>
-<p>By the end of this training, you will be able to:</p>
-<p><strong>Using plugins (Part 1):</strong></p>
+<p>इस प्रशिक्षण के अंत तक, तुम यह करने में सक्षम होगे:</p>
+<p><strong>Plugins का उपयोग करना (Part 1):</strong></p>
 <ul>
-<li>Install and configure existing plugins in your workflows</li>
-<li>Import and use plugin functions</li>
+<li>अपने वर्कफ़्लो में मौजूदा plugins को install और configure करना</li>
+<li>Plugin फ़ंक्शन को import और उपयोग करना</li>
 </ul>
-<p><strong>Developing plugins (Parts 2-6):</strong></p>
+<p><strong>Plugins develop करना (Parts 2-6):</strong></p>
 <ul>
-<li>Create a new plugin project using Nextflow's built-in project generator</li>
-<li>Implement custom functions callable from workflows</li>
-<li>Build, test, and install your plugin locally</li>
-<li>Monitor workflow events (e.g., task completion, pipeline start/end) for custom logging or notifications</li>
-<li>Add configuration options to make plugins customizable</li>
-<li>Distribute your plugin</li>
+<li>Nextflow के built-in project generator का उपयोग करके एक नया plugin प्रोजेक्ट बनाना</li>
+<li>वर्कफ़्लो से callable custom फ़ंक्शन implement करना</li>
+<li>अपने plugin को locally build, test, और install करना</li>
+<li>वर्कफ़्लो events (जैसे, कार्य पूर्णता, पाइपलाइन start/end) को custom logging या notifications के लिए monitor करना</li>
+<li>Plugins को customizable बनाने के लिए configuration options जोड़ना</li>
+<li>अपना plugin distribute करना</li>
 </ul>
 <h2 id="lesson-plan">Lesson plan<a class="headerlink" href="#lesson-plan" title="Permanent link">&para;</a></h2>
 <h4 id="part-1-plugin-basics">Part 1: Plugin basics<a class="headerlink" href="#part-1-plugin-basics" title="Permanent link">&para;</a></h4>
-<p>Use existing plugins in a Nextflow workflow and configure their behavior.</p>
+<p>एक Nextflow वर्कफ़्लो में मौजूदा plugins का उपयोग करें और उनके व्यवहार को configure करें।</p>
 <h4 id="part-2-create-a-plugin-project">Part 2: Create a plugin project<a class="headerlink" href="#part-2-create-a-plugin-project" title="Permanent link">&para;</a></h4>
-<p>Generate a new plugin project and examine its structure.</p>
+<p>एक नया plugin प्रोजेक्ट generate करें और उसकी संरचना की जांच करें।</p>
 <h4 id="part-3-custom-functions">Part 3: Custom functions<a class="headerlink" href="#part-3-custom-functions" title="Permanent link">&para;</a></h4>
-<p>Implement custom functions, build your plugin, and run it in a workflow.</p>
+<p>Custom फ़ंक्शन implement करें, अपना plugin build करें, और इसे एक वर्कफ़्लो में चलाएं।</p>
 <h4 id="part-4-testing">Part 4: Testing<a class="headerlink" href="#part-4-testing" title="Permanent link">&para;</a></h4>
-<p>Write and run unit tests using the Spock framework.</p>
+<p>Spock framework का उपयोग करके unit tests लिखें और चलाएं।</p>
 <h4 id="part-5-workflow-monitoring">Part 5: Workflow monitoring<a class="headerlink" href="#part-5-workflow-monitoring" title="Permanent link">&para;</a></h4>
-<p>Respond to events like task completion to build a task counter.</p>
+<p>एक task counter बनाने के लिए कार्य पूर्णता जैसे events पर प्रतिक्रिया दें।</p>
 <h4 id="part-6-configuration-distribution">Part 6: Configuration &amp; Distribution<a class="headerlink" href="#part-6-configuration-distribution" title="Permanent link">&para;</a></h4>
-<p>Read settings from <code>nextflow.config</code> to make your plugin customizable, then learn how to share it.</p>
-<p>Ready to take the course?</p>
-<p><a class="md-button md-button--primary" href="01_plugin_basics/">Start learning <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p><style type="text/css">.quiz {
+<p>अपने plugin को customizable बनाने के लिए <code>nextflow.config</code> से settings पढ़ें, फिर इसे साझा करना सीखें।</p>
+<p>कोर्स शुरू करने के लिए तैयार हो?</p>
+<p><a class="md-button md-button--primary" href="01_plugin_basics/">सीखना शुरू करें <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p><style type="text/css">.quiz {
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem 0;
@@ -5749,7 +5744,7 @@ window.mkdocsQuizConfig = {
       <nav class="md-footer__inner md-grid" aria-label="फुटर" >
         
           
-          <a href="../debugging/" class="md-footer__link md-footer__link--prev" aria-label="पिछला: Debugging Workflows">
+          <a href="../debugging/" class="md-footer__link md-footer__link--prev" aria-label="पिछला: वर्कफ़्लो डीबगिंग">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -5759,20 +5754,20 @@ window.mkdocsQuizConfig = {
                 पिछला
               </span>
               <div class="md-ellipsis">
-                Debugging Workflows
+                वर्कफ़्लो डीबगिंग
               </div>
             </div>
           </a>
         
         
           
-          <a href="01_plugin_basics/" class="md-footer__link md-footer__link--next" aria-label="आगामी: Part 1: Plugin Basics">
+          <a href="01_plugin_basics/" class="md-footer__link md-footer__link--next" aria-label="आगामी: भाग 1: Plugin की मूल बातें">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 आगामी
               </span>
               <div class="md-ellipsis">
-                Part 1: Plugin Basics
+                भाग 1: Plugin की मूल बातें
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -47,7 +47,7 @@
     
     
       
-        <title>Part 6: Configuration - training.nextflow.io</title>
+        <title>भाग 6: कॉन्फ़िगरेशन - training.nextflow.io</title>
       
     
     
@@ -157,7 +157,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#part-6-configuration" class="md-skip">
+        <a href="#6" class="md-skip">
           विषय पर बढ़ें
         </a>
       
@@ -196,7 +196,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Part 6: Configuration
+              भाग 6: कॉन्फ़िगरेशन
             
           </span>
         </div>
@@ -2345,7 +2345,7 @@
   <span class="md-ellipsis">
     
   
-    Development Environment
+    डेवलपमेंट एनवायरनमेंट
   
 
     
@@ -2373,7 +2373,7 @@
   <span class="md-ellipsis">
     
   
-    Essential Nextflow Scripting Patterns
+    आवश्यक Nextflow स्क्रिप्टिंग पैटर्न
   
 
     
@@ -2401,7 +2401,7 @@
   <span class="md-ellipsis">
     
   
-    Metadata and meta maps
+    मेटाडेटा और मेटा मैप्स
   
 
     
@@ -2429,7 +2429,7 @@
   <span class="md-ellipsis">
     
   
-    Splitting and Grouping
+    विभाजन और समूहीकरण
   
 
     
@@ -2457,7 +2457,7 @@
   <span class="md-ellipsis">
     
   
-    Testing with nf-test
+    nf-test के साथ परीक्षण
   
 
     
@@ -2485,7 +2485,7 @@
   <span class="md-ellipsis">
     
   
-    Workflows of Workflows
+    वर्कफ़्लो के वर्कफ़्लो
   
 
     
@@ -2513,7 +2513,7 @@
   <span class="md-ellipsis">
     
   
-    File input processing
+    फ़ाइल इनपुट प्रोसेसिंग
   
 
     
@@ -2541,7 +2541,7 @@
   <span class="md-ellipsis">
     
   
-    Debugging Workflows
+    वर्कफ़्लो डीबगिंग
   
 
     
@@ -2646,7 +2646,7 @@
   <span class="md-ellipsis">
     
   
-    Part 1: Plugin Basics
+    भाग 1: Plugin की मूल बातें
   
 
     
@@ -2674,7 +2674,7 @@
   <span class="md-ellipsis">
     
   
-    Part 2: Create a Plugin Project
+    भाग 2: एक Plugin प्रोजेक्ट बनाओ
   
 
     
@@ -2702,7 +2702,7 @@
   <span class="md-ellipsis">
     
   
-    Part 3: Custom Functions
+    भाग 3: कस्टम फ़ंक्शन
   
 
     
@@ -2730,7 +2730,7 @@
   <span class="md-ellipsis">
     
   
-    Part 4: Testing
+    भाग 4: परीक्षण
   
 
     
@@ -2758,7 +2758,7 @@
   <span class="md-ellipsis">
     
   
-    Part 5: Trace Observers
+    भाग 5: Trace Observers
   
 
     
@@ -2795,7 +2795,7 @@
   <span class="md-ellipsis">
     
   
-    Part 6: Configuration
+    भाग 6: कॉन्फ़िगरेशन
   
 
     
@@ -2813,7 +2813,7 @@
   <span class="md-ellipsis">
     
   
-    Part 6: Configuration
+    भाग 6: कॉन्फ़िगरेशन
   
 
     
@@ -2833,22 +2833,22 @@
   </label>
   <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
      <li class="md-nav__item">
-  <a href="#1-make-the-decorator-configurable" class="md-nav__link">
+  <a href="#1-decorator-configurable" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Make the decorator configurable
+        1. Decorator को configurable बनाओ
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Make the decorator configurable">
+    <nav class="md-nav" aria-label="1. Decorator को configurable बनाओ">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#11-add-the-configuration-reading-this-will-fail" class="md-nav__link">
+  <a href="#11-reading-fail" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.1. Add the configuration reading (this will fail!)
+        1.1. कॉन्फ़िगरेशन reading जोड़ो (यह fail होगा!)
       
     </span>
   </a>
@@ -2856,10 +2856,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#12-observe-the-error" class="md-nav__link">
+  <a href="#12-error" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.2. Observe the error
+        1.2. Error देखो
       
     </span>
   </a>
@@ -2867,10 +2867,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#13-fix-by-declaring-instance-variables" class="md-nav__link">
+  <a href="#13-instance-variables-declare" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3. Fix by declaring instance variables
+        1.3. Instance variables declare करके ठीक करो
       
     </span>
   </a>
@@ -2878,10 +2878,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#14-build-and-test" class="md-nav__link">
+  <a href="#14-build-test" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.4. Build and test
+        1.4. Build और test करो
       
     </span>
   </a>
@@ -2892,22 +2892,22 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#2-make-the-task-counter-configurable" class="md-nav__link">
+  <a href="#2-task-counter-configurable" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Make the task counter configurable
+        2. Task counter को configurable बनाओ
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Make the task counter configurable">
+    <nav class="md-nav" aria-label="2. Task counter को configurable बनाओ">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-build-and-test" class="md-nav__link">
+  <a href="#21-build-test" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1. Build and test
+        2.1. Build और test करो
       
     </span>
   </a>
@@ -2918,22 +2918,22 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#3-formal-configuration-with-configscope" class="md-nav__link">
+  <a href="#3-configscope-formal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Formal configuration with ConfigScope
+        3. ConfigScope के साथ Formal कॉन्फ़िगरेशन
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Formal configuration with ConfigScope">
+    <nav class="md-nav" aria-label="3. ConfigScope के साथ Formal कॉन्फ़िगरेशन">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-create-the-config-class" class="md-nav__link">
+  <a href="#31-config-class" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1. Create the config class
+        3.1. Config class बनाओ
       
     </span>
   </a>
@@ -2941,10 +2941,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#32-register-the-config-class" class="md-nav__link">
+  <a href="#32-config-class-register" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.2. Register the config class
+        3.2. Config class register करो
       
     </span>
   </a>
@@ -2952,10 +2952,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#33-build-and-test" class="md-nav__link">
+  <a href="#33-build-test" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.3. Build and test
+        3.3. Build और test करो
       
     </span>
   </a>
@@ -2966,19 +2966,19 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#takeaway" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Takeaway
+        सारांश
       
     </span>
   </a>
   
 </li>  <li class="md-nav__item">
-  <a href="#whats-next" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What's next?
+        आगे क्या है?
       
     </span>
   </a>
@@ -3193,7 +3193,7 @@
   <span class="md-ellipsis">
     
   
-    Summary
+    सारांश
   
 
     
@@ -3221,7 +3221,7 @@
   <span class="md-ellipsis">
     
   
-    Next Steps
+    अगले कदम
   
 
     
@@ -3686,22 +3686,22 @@
   </label>
   <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
      <li class="md-nav__item">
-  <a href="#1-make-the-decorator-configurable" class="md-nav__link">
+  <a href="#1-decorator-configurable" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Make the decorator configurable
+        1. Decorator को configurable बनाओ
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Make the decorator configurable">
+    <nav class="md-nav" aria-label="1. Decorator को configurable बनाओ">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#11-add-the-configuration-reading-this-will-fail" class="md-nav__link">
+  <a href="#11-reading-fail" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.1. Add the configuration reading (this will fail!)
+        1.1. कॉन्फ़िगरेशन reading जोड़ो (यह fail होगा!)
       
     </span>
   </a>
@@ -3709,10 +3709,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#12-observe-the-error" class="md-nav__link">
+  <a href="#12-error" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.2. Observe the error
+        1.2. Error देखो
       
     </span>
   </a>
@@ -3720,10 +3720,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#13-fix-by-declaring-instance-variables" class="md-nav__link">
+  <a href="#13-instance-variables-declare" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3. Fix by declaring instance variables
+        1.3. Instance variables declare करके ठीक करो
       
     </span>
   </a>
@@ -3731,10 +3731,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#14-build-and-test" class="md-nav__link">
+  <a href="#14-build-test" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.4. Build and test
+        1.4. Build और test करो
       
     </span>
   </a>
@@ -3745,22 +3745,22 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#2-make-the-task-counter-configurable" class="md-nav__link">
+  <a href="#2-task-counter-configurable" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Make the task counter configurable
+        2. Task counter को configurable बनाओ
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Make the task counter configurable">
+    <nav class="md-nav" aria-label="2. Task counter को configurable बनाओ">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-build-and-test" class="md-nav__link">
+  <a href="#21-build-test" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1. Build and test
+        2.1. Build और test करो
       
     </span>
   </a>
@@ -3771,22 +3771,22 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#3-formal-configuration-with-configscope" class="md-nav__link">
+  <a href="#3-configscope-formal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Formal configuration with ConfigScope
+        3. ConfigScope के साथ Formal कॉन्फ़िगरेशन
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Formal configuration with ConfigScope">
+    <nav class="md-nav" aria-label="3. ConfigScope के साथ Formal कॉन्फ़िगरेशन">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-create-the-config-class" class="md-nav__link">
+  <a href="#31-config-class" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1. Create the config class
+        3.1. Config class बनाओ
       
     </span>
   </a>
@@ -3794,10 +3794,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#32-register-the-config-class" class="md-nav__link">
+  <a href="#32-config-class-register" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.2. Register the config class
+        3.2. Config class register करो
       
     </span>
   </a>
@@ -3805,10 +3805,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#33-build-and-test" class="md-nav__link">
+  <a href="#33-build-test" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.3. Build and test
+        3.3. Build और test करो
       
     </span>
   </a>
@@ -3819,19 +3819,19 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#takeaway" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Takeaway
+        सारांश
       
     </span>
   </a>
   
 </li>  <li class="md-nav__item">
-  <a href="#whats-next" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What's next?
+        आगे क्या है?
       
     </span>
   </a>
@@ -4094,80 +4094,75 @@
 </a>
  
 
-<h1 id="part-6-configuration">Part 6: Configuration<a class="headerlink" href="#part-6-configuration" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Translation in Progress</p>
-<p>This page has not yet been translated into your language.
-You are viewing the original English content.</p>
-<p>Want to help? See our <a href="https://github.com/nextflow-io/training/blob/master/TRANSLATING.md">translation guide</a>.</p>
-</div>
-<p>Your plugin has custom functions and an observer, but everything is hardcoded.
-Users can't turn the task counter off, or change the decorator, without editing the source code and rebuilding.</p>
-<p>In Part 1, you used <code class="highlight"><span class="n">validation</span><span class="w"> </span><span class="o">{}</span></code> and <code class="highlight"><span class="n">co2footprint</span><span class="w"> </span><span class="o">{}</span></code> blocks in <code>nextflow.config</code> to control how nf-schema and nf-co2footprint behaved.
-Those config blocks exist because the plugin authors built that capability in.
-In this section, you'll do the same for your own plugin.</p>
-<p><strong>Objectives:</strong></p>
+<h1 id="6">भाग 6: कॉन्फ़िगरेशन<a class="headerlink" href="#6" title="Permanent link">&para;</a></h1>
+<p><span class="ai-translation-notice"><span class="twemoji ai-translation-notice-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2z"/></svg></span> AI-सहायता प्राप्त अनुवाद - <a href="https://github.com/nextflow-io/training/blob/master/TRANSLATING.md">अधिक जानें और सुधार सुझाएं</a></span></p>
+<p>तुम्हारे plugin में custom functions और एक observer है, लेकिन सब कुछ hardcoded है।
+Users task counter को बंद नहीं कर सकते, या decorator को बदल नहीं सकते, बिना source code edit किए और rebuild किए।</p>
+<p>भाग 1 में, तुमने <code>nextflow.config</code> में <code class="highlight"><span class="n">validation</span><span class="w"> </span><span class="o">{}</span></code> और <code class="highlight"><span class="n">co2footprint</span><span class="w"> </span><span class="o">{}</span></code> blocks का उपयोग किया था यह नियंत्रित करने के लिए कि nf-schema और nf-co2footprint कैसे काम करते हैं।
+वे config blocks इसलिए मौजूद हैं क्योंकि plugin authors ने वह क्षमता बनाई थी।
+इस section में, तुम अपने plugin के लिए भी यही करोगे।</p>
+<p><strong>उद्देश्य:</strong></p>
 <ol>
-<li>Let users customize the greeting decorator's prefix and suffix</li>
-<li>Let users enable or disable the plugin through <code>nextflow.config</code></li>
-<li>Register a formal config scope so Nextflow recognizes the <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{}</span></code> block</li>
+<li>Users को greeting decorator का prefix और suffix customize करने दो</li>
+<li>Users को <code>nextflow.config</code> के ज़रिए plugin को enable या disable करने दो</li>
+<li>एक formal config scope register करो ताकि Nextflow <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{}</span></code> block को पहचाने</li>
 </ol>
-<p><strong>What you'll change:</strong></p>
+<p><strong>तुम क्या बदलोगे:</strong></p>
 <table>
 <thead>
 <tr>
-<th>File</th>
-<th>Change</th>
+<th>फ़ाइल</th>
+<th>बदलाव</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>GreetingExtension.groovy</code></td>
-<td>Read prefix/suffix config in <code>init()</code></td>
+<td><code>init()</code> में prefix/suffix config पढ़ना</td>
 </tr>
 <tr>
 <td><code>GreetingFactory.groovy</code></td>
-<td>Read config values to control observer creation</td>
+<td>observer creation को नियंत्रित करने के लिए config values पढ़ना</td>
 </tr>
 <tr>
 <td><code>GreetingConfig.groovy</code></td>
-<td>New file: formal <code>@ConfigScope</code> class</td>
+<td>नई फ़ाइल: formal <code>@ConfigScope</code> class</td>
 </tr>
 <tr>
 <td><code>build.gradle</code></td>
-<td>Register the config class as an extension point</td>
+<td>config class को extension point के रूप में register करना</td>
 </tr>
 <tr>
 <td><code>nextflow.config</code></td>
-<td>Add a <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{}</span></code> block to test it</td>
+<td>इसे test करने के लिए <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{}</span></code> block जोड़ना</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition tip">
-<p class="admonition-title">Starting from here?</p>
-<p>If you're joining at this part, copy the solution from Part 5 to use as your starting point:</p>
+<p class="admonition-title">यहाँ से शुरू कर रहे हो?</p>
+<p>अगर तुम इस भाग से जुड़ रहे हो, तो अपने starting point के रूप में उपयोग करने के लिए भाग 5 का समाधान copy करो:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cp<span class="w"> </span>-r<span class="w"> </span>solutions/5-observers/*<span class="w"> </span>.
 </code></pre></div>
 </div>
 <div class="admonition info">
-<p class="admonition-title">Official documentation</p>
-<p>For comprehensive configuration details, see the <a href="https://nextflow.io/docs/latest/developer/config-scopes.html">Nextflow config scopes documentation</a>.</p>
+<p class="admonition-title">आधिकारिक दस्तावेज़ीकरण</p>
+<p>विस्तृत कॉन्फ़िगरेशन जानकारी के लिए, <a href="https://nextflow.io/docs/latest/developer/config-scopes.html">Nextflow config scopes documentation</a> देखो।</p>
 </div>
 <hr />
-<h2 id="1-make-the-decorator-configurable">1. Make the decorator configurable<a class="headerlink" href="#1-make-the-decorator-configurable" title="Permanent link">&para;</a></h2>
-<p>The <code>decorateGreeting</code> function wraps every greeting in <code>*** ... ***</code>.
-Users might want different markers, but right now the only way to change them is to edit the source code and rebuild.</p>
-<p>The Nextflow session provides a method called <code>session.config.navigate()</code> that reads nested values from <code>nextflow.config</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Read &#39;greeting.prefix&#39; from nextflow.config, defaulting to &#39;***&#39;</span>
+<h2 id="1-decorator-configurable">1. Decorator को configurable बनाओ<a class="headerlink" href="#1-decorator-configurable" title="Permanent link">&para;</a></h2>
+<p><code>decorateGreeting</code> function हर greeting को <code>*** ... ***</code> में wrap करता है।
+Users अलग markers चाहते हो सकते हैं, लेकिन अभी उन्हें बदलने का एकमात्र तरीका source code edit करना और rebuild करना है।</p>
+<p>Nextflow session एक method प्रदान करता है जिसे <code>session.config.navigate()</code> कहते हैं जो <code>nextflow.config</code> से nested values पढ़ता है:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// nextflow.config से &#39;greeting.prefix&#39; पढ़ो, default &#39;***&#39; के साथ</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">final</span><span class="w"> </span><span class="n">prefix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">session</span><span class="o">.</span><span class="na">config</span><span class="o">.</span><span class="na">navigate</span><span class="o">(</span><span class="s1">&#39;greeting.prefix&#39;</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;***&#39;</span><span class="o">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">String</span>
 </code></pre></div>
-<p>This corresponds to a config block in the user's <code>nextflow.config</code>:</p>
+<p>यह user के <code>nextflow.config</code> में एक config block से मेल खाता है:</p>
 <div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">greeting</span><span class="w"> </span><span class="o">{</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="n">prefix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&gt;&gt;&gt;&#39;</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="o">}</span>
 </code></pre></div>
-<h3 id="11-add-the-configuration-reading-this-will-fail">1.1. Add the configuration reading (this will fail!)<a class="headerlink" href="#11-add-the-configuration-reading-this-will-fail" title="Permanent link">&para;</a></h3>
-<p>Edit <code>GreetingExtension.groovy</code> to read configuration in <code>init()</code> and use it in <code>decorateGreeting()</code>:</p>
+<h3 id="11-reading-fail">1.1. कॉन्फ़िगरेशन reading जोड़ो (यह fail होगा!)<a class="headerlink" href="#11-reading-fail" title="Permanent link">&para;</a></h3>
+<p><code>GreetingExtension.groovy</code> को edit करो ताकि <code>init()</code> में configuration पढ़ी जाए और <code>decorateGreeting()</code> में उपयोग की जाए:</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">GreetingExtension.groovy</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-35">35</a></span>
 <span class="normal"><a href="#__codelineno-3-36">36</a></span>
 <span class="normal"><a href="#__codelineno-3-37">37</a></span>
@@ -4191,26 +4186,26 @@ Users might want different markers, but right now the only way to change them is
 <a id="__codelineno-3-37" name="__codelineno-3-37"></a>
 <a id="__codelineno-3-38" name="__codelineno-3-38"></a><span class="w">    </span><span class="nd">@Override</span>
 <a id="__codelineno-3-39" name="__codelineno-3-39"></a><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">init</span><span class="o">(</span><span class="n">Session</span><span class="w"> </span><span class="n">session</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
-<a id="__codelineno-3-40" name="__codelineno-3-40"></a><span class="w">        </span><span class="c1">// Read configuration with defaults</span>
+<a id="__codelineno-3-40" name="__codelineno-3-40"></a><span class="w">        </span><span class="c1">// defaults के साथ configuration पढ़ो</span>
 <a id="__codelineno-3-41" name="__codelineno-3-41"></a><span class="hll"><span class="w">        </span><span class="n">prefix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">session</span><span class="o">.</span><span class="na">config</span><span class="o">.</span><span class="na">navigate</span><span class="o">(</span><span class="s1">&#39;greeting.prefix&#39;</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;***&#39;</span><span class="o">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">String</span>
 </span><a id="__codelineno-3-42" name="__codelineno-3-42"></a><span class="hll"><span class="w">        </span><span class="n">suffix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">session</span><span class="o">.</span><span class="na">config</span><span class="o">.</span><span class="na">navigate</span><span class="o">(</span><span class="s1">&#39;greeting.suffix&#39;</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;***&#39;</span><span class="o">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">String</span>
 </span><a id="__codelineno-3-43" name="__codelineno-3-43"></a><span class="w">    </span><span class="o">}</span>
 <a id="__codelineno-3-44" name="__codelineno-3-44"></a>
-<a id="__codelineno-3-45" name="__codelineno-3-45"></a><span class="w">    </span><span class="c1">// ... other methods unchanged ...</span>
+<a id="__codelineno-3-45" name="__codelineno-3-45"></a><span class="w">    </span><span class="c1">// ... अन्य methods अपरिवर्तित ...</span>
 <a id="__codelineno-3-46" name="__codelineno-3-46"></a>
 <a id="__codelineno-3-47" name="__codelineno-3-47"></a><span class="w">    </span><span class="cm">/**</span>
-<a id="__codelineno-3-48" name="__codelineno-3-48"></a><span class="cm">    * Decorate a greeting with celebratory markers</span>
+<a id="__codelineno-3-48" name="__codelineno-3-48"></a><span class="cm">    * एक greeting को celebratory markers के साथ decorate करो</span>
 <a id="__codelineno-3-49" name="__codelineno-3-49"></a><span class="cm">    */</span>
 <a id="__codelineno-3-50" name="__codelineno-3-50"></a><span class="w">    </span><span class="nd">@Function</span>
 <a id="__codelineno-3-51" name="__codelineno-3-51"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">decorateGreeting</span><span class="o">(</span><span class="n">String</span><span class="w"> </span><span class="n">greeting</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
 <a id="__codelineno-3-52" name="__codelineno-3-52"></a><span class="hll"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;${prefix} ${greeting} ${suffix}&quot;</span>
 </span><a id="__codelineno-3-53" name="__codelineno-3-53"></a><span class="w">    </span><span class="o">}</span>
 </code></pre></div></td></tr></table></div>
-<p>Try to build:</p>
+<p>Build करने की कोशिश करो:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span><span class="w"> </span>nf-greeting<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>assemble
 </code></pre></div>
-<h3 id="12-observe-the-error">1.2. Observe the error<a class="headerlink" href="#12-observe-the-error" title="Permanent link">&para;</a></h3>
-<p>The build fails:</p>
+<h3 id="12-error">1.2. Error देखो<a class="headerlink" href="#12-error" title="Permanent link">&para;</a></h3>
+<p>Build fail होती है:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="go">&gt; Task :compileGroovy FAILED</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="go">GreetingExtension.groovy: 30: [Static type checking] - The variable [prefix] is undeclared.</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="go"> @ line 30, column 9.</span>
@@ -4219,10 +4214,10 @@ Users might want different markers, but right now the only way to change them is
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
 <a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="go">GreetingExtension.groovy: 31: [Static type checking] - The variable [suffix] is undeclared.</span>
 </code></pre></div>
-<p>In Groovy (and Java), you must <em>declare</em> a variable before using it.
-The code tries to assign values to <code>prefix</code> and <code>suffix</code>, but the class has no fields with those names.</p>
-<h3 id="13-fix-by-declaring-instance-variables">1.3. Fix by declaring instance variables<a class="headerlink" href="#13-fix-by-declaring-instance-variables" title="Permanent link">&para;</a></h3>
-<p>Add variable declarations at the top of the class, right after the opening brace:</p>
+<p>Groovy (और Java) में, variable को उपयोग करने से पहले <em>declare</em> करना ज़रूरी है।
+Code <code>prefix</code> और <code>suffix</code> को values assign करने की कोशिश करता है, लेकिन class में उन नामों के कोई fields नहीं हैं।</p>
+<h3 id="13-instance-variables-declare">1.3. Instance variables declare करके ठीक करो<a class="headerlink" href="#13-instance-variables-declare" title="Permanent link">&para;</a></h3>
+<p>Class के शुरुआत में, opening brace के ठीक बाद, variable declarations जोड़ो:</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">GreetingExtension.groovy</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-35">35</a></span>
 <span class="normal"><a href="#__codelineno-6-36">36</a></span>
 <span class="normal"><a href="#__codelineno-6-37">37</a></span>
@@ -4244,33 +4239,33 @@ The code tries to assign values to <code>prefix</code> and <code>suffix</code>, 
 </span><a id="__codelineno-6-40" name="__codelineno-6-40"></a>
 <a id="__codelineno-6-41" name="__codelineno-6-41"></a><span class="w">    </span><span class="nd">@Override</span>
 <a id="__codelineno-6-42" name="__codelineno-6-42"></a><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">init</span><span class="o">(</span><span class="n">Session</span><span class="w"> </span><span class="n">session</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
-<a id="__codelineno-6-43" name="__codelineno-6-43"></a><span class="w">        </span><span class="c1">// Read configuration with defaults</span>
+<a id="__codelineno-6-43" name="__codelineno-6-43"></a><span class="w">        </span><span class="c1">// defaults के साथ configuration पढ़ो</span>
 <a id="__codelineno-6-44" name="__codelineno-6-44"></a><span class="w">        </span><span class="n">prefix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">session</span><span class="o">.</span><span class="na">config</span><span class="o">.</span><span class="na">navigate</span><span class="o">(</span><span class="s1">&#39;greeting.prefix&#39;</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;***&#39;</span><span class="o">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">String</span>
 <a id="__codelineno-6-45" name="__codelineno-6-45"></a><span class="w">        </span><span class="n">suffix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">session</span><span class="o">.</span><span class="na">config</span><span class="o">.</span><span class="na">navigate</span><span class="o">(</span><span class="s1">&#39;greeting.suffix&#39;</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;***&#39;</span><span class="o">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">String</span>
 <a id="__codelineno-6-46" name="__codelineno-6-46"></a><span class="w">    </span><span class="o">}</span>
 <a id="__codelineno-6-47" name="__codelineno-6-47"></a>
-<a id="__codelineno-6-48" name="__codelineno-6-48"></a><span class="w">    </span><span class="c1">// ... rest of class unchanged ...</span>
+<a id="__codelineno-6-48" name="__codelineno-6-48"></a><span class="w">    </span><span class="c1">// ... class का बाकी हिस्सा अपरिवर्तित ...</span>
 </code></pre></div></td></tr></table></div>
-<p>These two lines declare <strong>instance variables</strong> (also called fields) that belong to each <code>GreetingExtension</code> object.
-The <code>private</code> keyword means only code inside this class can access them.
-Each variable is initialized with a default value of <code>'***'</code>.</p>
-<p>When the plugin loads, Nextflow calls the <code>init()</code> method, which overwrites these defaults with whatever the user has set in <code>nextflow.config</code>.
-If the user hasn't set anything, <code>navigate()</code> returns the same default, so the behavior is unchanged.
-The <code>decorateGreeting()</code> method then reads these fields each time it runs.</p>
+<p>ये दो lines <strong>instance variables</strong> (जिन्हें fields भी कहते हैं) declare करती हैं जो प्रत्येक <code>GreetingExtension</code> object से संबंधित हैं।
+<code>private</code> keyword का मतलब है कि केवल इस class के अंदर का code इन्हें access कर सकता है।
+प्रत्येक variable को <code>'***'</code> के default value के साथ initialize किया गया है।</p>
+<p>जब plugin load होता है, Nextflow <code>init()</code> method को call करता है, जो इन defaults को user द्वारा <code>nextflow.config</code> में set की गई values से overwrite करता है।
+अगर user ने कुछ set नहीं किया है, तो <code>navigate()</code> वही default return करता है, इसलिए behavior अपरिवर्तित रहता है।
+<code>decorateGreeting()</code> method फिर हर बार चलने पर इन fields को पढ़ता है।</p>
 <div class="admonition tip">
-<p class="admonition-title">Learning from errors</p>
-<p>This "declare before use" pattern is fundamental to Java/Groovy but unfamiliar if you come from Python or R where variables spring into existence when you first assign them.
-Experiencing this error once helps you recognize and fix it quickly in the future.</p>
+<p class="admonition-title">Errors से सीखना</p>
+<p>यह "declare before use" pattern Java/Groovy के लिए fundamental है लेकिन अपरिचित है अगर तुम Python या R से आए हो जहाँ variables पहली बार assign करने पर अस्तित्व में आ जाते हैं।
+इस error को एक बार अनुभव करने से तुम इसे भविष्य में जल्दी पहचान और ठीक कर सकते हो।</p>
 </div>
-<h3 id="14-build-and-test">1.4. Build and test<a class="headerlink" href="#14-build-and-test" title="Permanent link">&para;</a></h3>
-<p>Build and install:</p>
+<h3 id="14-build-test">1.4. Build और test करो<a class="headerlink" href="#14-build-test" title="Permanent link">&para;</a></h3>
+<p>Build और install करो:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>make<span class="w"> </span>install<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
 </code></pre></div>
-<p>Update <code>nextflow.config</code> to customize the decoration:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">After</label><label for="__tabbed_1_2">Before</label></div>
+<p>Decoration customize करने के लिए <code>nextflow.config</code> update करो:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">बाद में</label><label for="__tabbed_1_2">पहले</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// Configuration for plugin development exercises</span>
+<div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// Plugin development exercises के लिए कॉन्फ़िगरेशन</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">plugins</span><span class="w"> </span><span class="o">{</span>
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="s1">&#39;nf-schema@2.6.1&#39;</span>
 <a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="s1">&#39;nf-greeting@0.1.0&#39;</span>
@@ -4283,7 +4278,7 @@ Experiencing this error once helps you recognize and fix it quickly in the futur
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">// Configuration for plugin development exercises</span>
+<div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">// Plugin development exercises के लिए कॉन्फ़िगरेशन</span>
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">plugins</span><span class="w"> </span><span class="o">{</span>
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="s1">&#39;nf-schema@2.6.1&#39;</span>
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="s1">&#39;nf-greeting@0.1.0&#39;</span>
@@ -4292,23 +4287,23 @@ Experiencing this error once helps you recognize and fix it quickly in the futur
 </div>
 </div>
 </div>
-<p>Run the pipeline:</p>
+<p>Pipeline चलाओ:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>nextflow<span class="w"> </span>run<span class="w"> </span>greet.nf<span class="w"> </span>-ansi-log<span class="w"> </span><span class="nb">false</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Output (partial)</span><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="go">Decorated: &gt;&gt;&gt; Hello &lt;&lt;&lt;</span>
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="go">Decorated: &gt;&gt;&gt; Bonjour &lt;&lt;&lt;</span>
 <a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="go">...</span>
 </code></pre></div>
-<p>The decorator now uses the custom prefix and suffix from the config file.</p>
-<p>Note that Nextflow prints an "Unrecognized config option" warning because nothing has declared <code>greeting</code> as a valid scope yet.
-The value still gets read correctly via <code>navigate()</code>, but Nextflow flags it as unrecognized.
-You will fix this in Section 3.</p>
+<p>Decorator अब config फ़ाइल से custom prefix और suffix उपयोग करता है।</p>
+<p>ध्यान दो कि Nextflow एक "Unrecognized config option" warning print करता है क्योंकि किसी ने <code>greeting</code> को valid scope के रूप में declare नहीं किया है।
+Value अभी भी <code>navigate()</code> के ज़रिए सही तरीके से पढ़ी जाती है, लेकिन Nextflow इसे unrecognized के रूप में flag करता है।
+तुम इसे Section 3 में ठीक करोगे।</p>
 <hr />
-<h2 id="2-make-the-task-counter-configurable">2. Make the task counter configurable<a class="headerlink" href="#2-make-the-task-counter-configurable" title="Permanent link">&para;</a></h2>
-<p>The observer factory currently creates observers unconditionally.
-Users should be able to disable the plugin entirely through configuration.</p>
-<p>The factory has access to the Nextflow session and its configuration, so it is the right place to read the <code>enabled</code> setting and decide whether to create observers.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">After</label><label for="__tabbed_2_2">Before</label></div>
+<h2 id="2-task-counter-configurable">2. Task counter को configurable बनाओ<a class="headerlink" href="#2-task-counter-configurable" title="Permanent link">&para;</a></h2>
+<p>Observer factory अभी बिना शर्त के observers बनाती है।
+Users को configuration के ज़रिए plugin को पूरी तरह disable करने में सक्षम होना चाहिए।</p>
+<p>Factory के पास Nextflow session और उसकी configuration तक access है, इसलिए यह <code>enabled</code> setting पढ़ने और observers बनाने का निर्णय लेने के लिए सही जगह है।</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">बाद में</label><label for="__tabbed_2_2">पहले</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">GreetingFactory.groovy</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-31">31</a></span>
@@ -4350,22 +4345,22 @@ Users should be able to disable the plugin entirely through configuration.</p>
 </div>
 </div>
 </div>
-<p>The factory now reads <code>greeting.enabled</code> from the config and returns an empty list if the user has set it to <code>false</code>.
-When the list is empty, no observers are created, so the plugin's lifecycle hooks are silently skipped.</p>
-<h3 id="21-build-and-test">2.1. Build and test<a class="headerlink" href="#21-build-and-test" title="Permanent link">&para;</a></h3>
-<p>Rebuild and install the plugin:</p>
+<p>Factory अब config से <code>greeting.enabled</code> पढ़ती है और अगर user ने इसे <code>false</code> set किया है तो empty list return करती है।
+जब list empty होती है, कोई observers नहीं बनते, इसलिए plugin के lifecycle hooks चुपचाप skip हो जाते हैं।</p>
+<h3 id="21-build-test">2.1. Build और test करो<a class="headerlink" href="#21-build-test" title="Permanent link">&para;</a></h3>
+<p>Plugin को rebuild और install करो:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nb">cd</span><span class="w"> </span>nf-greeting<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>install<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
 </code></pre></div>
-<p>Run the pipeline to confirm everything still works:</p>
+<p>यह confirm करने के लिए pipeline चलाओ कि सब कुछ अभी भी काम करता है:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>nextflow<span class="w"> </span>run<span class="w"> </span>greet.nf<span class="w"> </span>-ansi-log<span class="w"> </span><span class="nb">false</span>
 </code></pre></div>
 <details class="exercise">
-<summary>Disable the plugin entirely</summary>
-<p>Try setting <code>greeting.enabled = false</code> in <code>nextflow.config</code> and run the pipeline again.
-What changes in the output?</p>
+<summary>Plugin को पूरी तरह disable करो</summary>
+<p><code>nextflow.config</code> में <code>greeting.enabled = false</code> set करने की कोशिश करो और pipeline फिर से चलाओ।
+आउटपुट में क्या बदलता है?</p>
 <details class="solution">
-<summary>Solution</summary>
-<div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1">// Configuration for plugin development exercises</span>
+<summary>समाधान</summary>
+<div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1">// Plugin development exercises के लिए कॉन्फ़िगरेशन</span>
 <a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">plugins</span><span class="w"> </span><span class="o">{</span>
 <a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="s1">&#39;nf-schema@2.6.1&#39;</span>
 <a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="s1">&#39;nf-greeting@0.1.0&#39;</span>
@@ -4375,18 +4370,18 @@ What changes in the output?</p>
 <a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="hll"><span class="w">    </span><span class="n">enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
 </span><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="o">}</span>
 </code></pre></div>
-<p>The "Pipeline is starting!", "Pipeline complete!", and task count messages all disappear because the factory returns an empty list when <code>enabled</code> is false.
-The pipeline itself still runs, but no observers are active.</p>
-<p>Remember to set <code>enabled</code> back to <code>true</code> (or remove the line) before continuing.</p>
+<p>"Pipeline is starting!", "Pipeline complete!", और task count messages सभी गायब हो जाते हैं क्योंकि factory empty list return करती है जब <code>enabled</code> false होता है।
+Pipeline खुद अभी भी चलती है, लेकिन कोई observers active नहीं हैं।</p>
+<p>जारी रखने से पहले <code>enabled</code> को <code>true</code> पर वापस set करना याद रखो (या line हटा दो)।</p>
 </details>
 </details>
 <hr />
-<h2 id="3-formal-configuration-with-configscope">3. Formal configuration with ConfigScope<a class="headerlink" href="#3-formal-configuration-with-configscope" title="Permanent link">&para;</a></h2>
-<p>Your plugin configuration works, but Nextflow still prints "Unrecognized config option" warnings.
-That is because <code>session.config.navigate()</code> only reads values; nothing has told Nextflow that <code>greeting</code> is a valid config scope.</p>
-<p>A <code>ConfigScope</code> class fills that gap.
-It declares what options your plugin accepts, their types, and their defaults.
-It does <strong>not</strong> replace your <code>navigate()</code> calls. Instead, it works alongside them:</p>
+<h2 id="3-configscope-formal">3. ConfigScope के साथ Formal कॉन्फ़िगरेशन<a class="headerlink" href="#3-configscope-formal" title="Permanent link">&para;</a></h2>
+<p>तुम्हारा plugin configuration काम करता है, लेकिन Nextflow अभी भी "Unrecognized config option" warnings print करता है।
+ऐसा इसलिए है क्योंकि <code>session.config.navigate()</code> केवल values पढ़ता है; किसी ने Nextflow को नहीं बताया कि <code>greeting</code> एक valid config scope है।</p>
+<p>एक <code>ConfigScope</code> class उस gap को भरती है।
+यह declare करती है कि तुम्हारा plugin कौन से options accept करता है, उनके types, और उनके defaults।
+यह तुम्हारे <code>navigate()</code> calls को <strong>replace नहीं</strong> करती। बल्कि, यह उनके साथ काम करती है:</p>
 <pre class="mermaid"><code>flowchart LR
     A["nextflow.config&lt;br/&gt;greeting { ... }"] --&gt; B["ConfigScope&lt;br/&gt;&lt;i&gt;declares valid options&lt;/i&gt;"]
     A --&gt; C["navigate()&lt;br/&gt;&lt;i&gt;reads values at runtime&lt;/i&gt;"]
@@ -4395,20 +4390,20 @@ It does <strong>not</strong> replace your <code>navigate()</code> calls. Instead
 
     style B fill:#e8f5e9,stroke:#4caf50
     style C fill:#e3f2fd,stroke:#2196f3</code></pre>
-<p>Without a <code>ConfigScope</code> class, <code>navigate()</code> still works, but:</p>
+<p><code>ConfigScope</code> class के बिना, <code>navigate()</code> अभी भी काम करता है, लेकिन:</p>
 <ul>
-<li>Nextflow warns about unrecognized options (as you've seen)</li>
-<li>No IDE autocompletion for users writing <code>nextflow.config</code></li>
-<li>Configuration options aren't self-documenting</li>
-<li>Type conversion is manual (<code>as String</code>, <code>as boolean</code>)</li>
+<li>Nextflow unrecognized options के बारे में warn करता है (जैसा तुमने देखा)</li>
+<li><code>nextflow.config</code> लिखने वाले users के लिए कोई IDE autocompletion नहीं</li>
+<li>Configuration options self-documenting नहीं हैं</li>
+<li>Type conversion manual है (<code>as String</code>, <code>as boolean</code>)</li>
 </ul>
-<p>Registering a formal config scope class fixes the warning and addresses all three issues.
-This is the same mechanism behind the <code class="highlight"><span class="n">validation</span><span class="w"> </span><span class="o">{}</span></code> and <code class="highlight"><span class="n">co2footprint</span><span class="w"> </span><span class="o">{}</span></code> blocks you used in Part 1.</p>
-<h3 id="31-create-the-config-class">3.1. Create the config class<a class="headerlink" href="#31-create-the-config-class" title="Permanent link">&para;</a></h3>
-<p>Create a new file:</p>
+<p>एक formal config scope class register करने से warning ठीक होती है और तीनों समस्याएं हल होती हैं।
+यह वही mechanism है जो <code class="highlight"><span class="n">validation</span><span class="w"> </span><span class="o">{}</span></code> और <code class="highlight"><span class="n">co2footprint</span><span class="w"> </span><span class="o">{}</span></code> blocks के पीछे है जो तुमने भाग 1 में उपयोग किए थे।</p>
+<h3 id="31-config-class">3.1. Config class बनाओ<a class="headerlink" href="#31-config-class" title="Permanent link">&para;</a></h3>
+<p>एक नई फ़ाइल बनाओ:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>touch<span class="w"> </span>nf-greeting/src/main/groovy/training/plugin/GreetingConfig.groovy
 </code></pre></div>
-<p>Add the config class with all three options:</p>
+<p>तीनों options के साथ config class जोड़ो:</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">GreetingConfig.groovy</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-18-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-18-3"> 3</a></span>
@@ -4457,9 +4452,9 @@ This is the same mechanism behind the <code class="highlight"><span class="n">va
 <a id="__codelineno-18-6" name="__codelineno-18-6"></a><span class="kn">import</span><span class="w"> </span><span class="nn">nextflow.script.dsl.Description</span>
 <a id="__codelineno-18-7" name="__codelineno-18-7"></a>
 <a id="__codelineno-18-8" name="__codelineno-18-8"></a><span class="cm">/**</span>
-<a id="__codelineno-18-9" name="__codelineno-18-9"></a><span class="cm"> * Configuration options for the nf-greeting plugin.</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9"></a><span class="cm"> * nf-greeting plugin के लिए कॉन्फ़िगरेशन options।</span>
 <a id="__codelineno-18-10" name="__codelineno-18-10"></a><span class="cm"> *</span>
-<a id="__codelineno-18-11" name="__codelineno-18-11"></a><span class="cm"> * Users configure these in nextflow.config:</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11"></a><span class="cm"> * Users इन्हें nextflow.config में configure करते हैं:</span>
 <a id="__codelineno-18-12" name="__codelineno-18-12"></a><span class="cm"> *</span>
 <a id="__codelineno-18-13" name="__codelineno-18-13"></a><span class="cm"> *     greeting {</span>
 <a id="__codelineno-18-14" name="__codelineno-18-14"></a><span class="cm"> *         enabled = true</span>
@@ -4492,23 +4487,23 @@ This is the same mechanism behind the <code class="highlight"><span class="n">va
 <a id="__codelineno-18-41" name="__codelineno-18-41"></a><span class="o">}</span>
 </code></pre></div></td></tr></table></div>
 <ol>
-<li>Maps to the <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span></code> block in <code>nextflow.config</code></li>
-<li>Required interface for config classes</li>
-<li>Both no-arg and Map constructors are needed for Nextflow to instantiate the config</li>
-<li><code>@ConfigOption</code> marks a field as a configuration option; <code>@Description</code> documents it for tooling</li>
+<li><code>nextflow.config</code> में <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span></code> block से map करता है</li>
+<li>Config classes के लिए required interface</li>
+<li>Nextflow को config instantiate करने के लिए no-arg और Map दोनों constructors चाहिए</li>
+<li><code>@ConfigOption</code> एक field को configuration option के रूप में mark करता है; <code>@Description</code> इसे tooling के लिए document करता है</li>
 </ol>
-<p>Key points:</p>
+<p>मुख्य बातें:</p>
 <ul>
-<li><strong><code>@ScopeName('greeting')</code></strong>: Maps to the <code>greeting { }</code> block in config</li>
-<li><strong><code>implements ConfigScope</code></strong>: Required interface for config classes</li>
-<li><strong><code>@ConfigOption</code></strong>: Each field becomes a configuration option</li>
-<li><strong><code>@Description</code></strong>: Documents each option for language server support (imported from <code>nextflow.script.dsl</code>)</li>
-<li><strong>Constructors</strong>: Both no-arg and Map constructors are needed</li>
+<li><strong><code>@ScopeName('greeting')</code></strong>: Config में <code>greeting { }</code> block से map करता है</li>
+<li><strong><code>implements ConfigScope</code></strong>: Config classes के लिए required interface</li>
+<li><strong><code>@ConfigOption</code></strong>: प्रत्येक field एक configuration option बन जाता है</li>
+<li><strong><code>@Description</code></strong>: Language server support के लिए प्रत्येक option को document करता है (<code>nextflow.script.dsl</code> से import)</li>
+<li><strong>Constructors</strong>: No-arg और Map दोनों constructors ज़रूरी हैं</li>
 </ul>
-<h3 id="32-register-the-config-class">3.2. Register the config class<a class="headerlink" href="#32-register-the-config-class" title="Permanent link">&para;</a></h3>
-<p>Creating the class is not enough on its own.
-Nextflow needs to know it exists, so you register it in <code>build.gradle</code> alongside the other extension points.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">After</label><label for="__tabbed_3_2">Before</label></div>
+<h3 id="32-config-class-register">3.2. Config class register करो<a class="headerlink" href="#32-config-class-register" title="Permanent link">&para;</a></h3>
+<p>Class बनाना अकेले काफी नहीं है।
+Nextflow को यह जानना ज़रूरी है कि यह exist करती है, इसलिए तुम इसे <code>build.gradle</code> में अन्य extension points के साथ register करते हो।</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">बाद में</label><label for="__tabbed_3_2">पहले</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><span class="filename">build.gradle</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">extensionPoints</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span>
@@ -4527,34 +4522,34 @@ Nextflow needs to know it exists, so you register it in <code>build.gradle</code
 </div>
 </div>
 </div>
-<p>Note the difference between the factory and extension points registration:</p>
+<p>Factory और extension points registration के बीच अंतर नोट करो:</p>
 <ul>
-<li><strong><code>extensionPoints</code> in <code>build.gradle</code></strong>: Compile-time registration. Tells the Nextflow plugin system which classes implement extension points.</li>
-<li><strong>Factory <code>create()</code> method</strong>: Runtime registration. The factory creates observer instances when a workflow actually starts.</li>
+<li><strong><code>build.gradle</code> में <code>extensionPoints</code></strong>: Compile-time registration। Nextflow plugin system को बताता है कि कौन सी classes extension points implement करती हैं।</li>
+<li><strong>Factory <code>create()</code> method</strong>: Runtime registration। Factory observer instances बनाती है जब workflow actually शुरू होता है।</li>
 </ul>
-<h3 id="33-build-and-test">3.3. Build and test<a class="headerlink" href="#33-build-and-test" title="Permanent link">&para;</a></h3>
+<h3 id="33-build-test">3.3. Build और test करो<a class="headerlink" href="#33-build-test" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="nb">cd</span><span class="w"> </span>nf-greeting<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>install<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
 <a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>nextflow<span class="w"> </span>run<span class="w"> </span>greet.nf<span class="w"> </span>-ansi-log<span class="w"> </span><span class="nb">false</span>
 </code></pre></div>
-<p>The pipeline behavior is identical, but the "Unrecognized config option" warning is gone.</p>
+<p>Pipeline का behavior identical है, लेकिन "Unrecognized config option" warning चली गई है।</p>
 <div class="admonition note">
-<p class="admonition-title">What changed and what didn't</p>
-<p>Your <code>GreetingFactory</code> and <code>GreetingExtension</code> still use <code>session.config.navigate()</code> to read values at runtime.
-None of that code changed.
-The <code>ConfigScope</code> class is a parallel declaration that tells Nextflow what options exist.
-Both pieces are needed: <code>ConfigScope</code> declares, <code>navigate()</code> reads.</p>
+<p class="admonition-title">क्या बदला और क्या नहीं</p>
+<p>तुम्हारे <code>GreetingFactory</code> और <code>GreetingExtension</code> अभी भी runtime पर values पढ़ने के लिए <code>session.config.navigate()</code> उपयोग करते हैं।
+वह code नहीं बदला।
+<code>ConfigScope</code> class एक parallel declaration है जो Nextflow को बताती है कि कौन से options exist करते हैं।
+दोनों pieces ज़रूरी हैं: <code>ConfigScope</code> declare करती है, <code>navigate()</code> पढ़ता है।</p>
 </div>
-<p>Your plugin now has the same structure as the plugins you used in Part 1.
-When nf-schema exposes a <code class="highlight"><span class="n">validation</span><span class="w"> </span><span class="o">{}</span></code> block or nf-co2footprint exposes a <code class="highlight"><span class="n">co2footprint</span><span class="w"> </span><span class="o">{}</span></code> block, they use exactly this pattern: a <code>ConfigScope</code> class with annotated fields, registered as an extension point.
-Your <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{}</span></code> block works the same way.</p>
+<p>तुम्हारे plugin में अब वही structure है जो भाग 1 में तुमने उपयोग किए plugins में था।
+जब nf-schema एक <code class="highlight"><span class="n">validation</span><span class="w"> </span><span class="o">{}</span></code> block expose करता है या nf-co2footprint एक <code class="highlight"><span class="n">co2footprint</span><span class="w"> </span><span class="o">{}</span></code> block expose करता है, वे exactly इसी pattern का उपयोग करते हैं: annotated fields के साथ एक <code>ConfigScope</code> class, extension point के रूप में registered।
+तुम्हारा <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{}</span></code> block उसी तरह काम करता है।</p>
 <hr />
-<h2 id="takeaway">Takeaway<a class="headerlink" href="#takeaway" title="Permanent link">&para;</a></h2>
-<p>You learned that:</p>
+<h2 id="_1">सारांश<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>तुमने सीखा कि:</p>
 <ul>
-<li><code>session.config.navigate()</code> <strong>reads</strong> config values at runtime</li>
-<li><code>@ConfigScope</code> classes <strong>declare</strong> what config options exist; they work alongside <code>navigate()</code>, not instead of it</li>
-<li>Configuration can be applied to both observers and extension functions</li>
-<li>Instance variables must be declared before use in Groovy/Java; <code>init()</code> populates them from config when the plugin loads</li>
+<li><code>session.config.navigate()</code> runtime पर config values <strong>पढ़ता</strong> है</li>
+<li><code>@ConfigScope</code> classes <strong>declare</strong> करती हैं कि कौन से config options exist करते हैं; वे <code>navigate()</code> के साथ काम करती हैं, उसकी जगह नहीं</li>
+<li>Configuration को observers और extension functions दोनों पर apply किया जा सकता है</li>
+<li>Groovy/Java में instance variables को उपयोग से पहले declare करना ज़रूरी है; <code>init()</code> plugin load होने पर उन्हें config से populate करता है</li>
 </ul>
 <table>
 <thead>
@@ -4565,24 +4560,24 @@ Your <code class="highlight"><span class="n">greeting</span><span class="w"> </s
 </thead>
 <tbody>
 <tr>
-<td>Quick prototype or simple plugin</td>
-<td><code>session.config.navigate()</code> only</td>
+<td>Quick prototype या simple plugin</td>
+<td>केवल <code>session.config.navigate()</code></td>
 </tr>
 <tr>
-<td>Production plugin with many options</td>
-<td>Add a <code>ConfigScope</code> class alongside your <code>navigate()</code> calls</td>
+<td>कई options वाला production plugin</td>
+<td>अपने <code>navigate()</code> calls के साथ एक <code>ConfigScope</code> class जोड़ो</td>
 </tr>
 <tr>
-<td>Plugin you'll share publicly</td>
-<td>Add a <code>ConfigScope</code> class alongside your <code>navigate()</code> calls</td>
+<td>Plugin जिसे तुम publicly share करोगे</td>
+<td>अपने <code>navigate()</code> calls के साथ एक <code>ConfigScope</code> class जोड़ो</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="whats-next">What's next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
-<p>Your plugin now has all the pieces of a production plugin: custom functions, trace observers, and user-facing configuration.
-The final step is packaging it for distribution.</p>
-<p><a class="md-button md-button--primary" href="../summary/">Continue to Summary <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p><style type="text/css">.quiz {
+<h2 id="_2">आगे क्या है?<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>तुम्हारे plugin में अब एक production plugin के सभी pieces हैं: custom functions, trace observers, और user-facing configuration।
+अंतिम कदम इसे distribution के लिए package करना है।</p>
+<p><a class="md-button md-button--primary" href="../summary/">Summary पर जारी रखो <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p><style type="text/css">.quiz {
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem 0;
@@ -6280,7 +6275,7 @@ window.mkdocsQuizConfig = {
       <nav class="md-footer__inner md-grid" aria-label="फुटर" >
         
           
-          <a href="../05_observers/" class="md-footer__link md-footer__link--prev" aria-label="पिछला: Part 5: Trace Observers">
+          <a href="../05_observers/" class="md-footer__link md-footer__link--prev" aria-label="पिछला: भाग 5: Trace Observers">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -6290,20 +6285,20 @@ window.mkdocsQuizConfig = {
                 पिछला
               </span>
               <div class="md-ellipsis">
-                Part 5: Trace Observers
+                भाग 5: Trace Observers
               </div>
             </div>
           </a>
         
         
           
-          <a href="../summary/" class="md-footer__link md-footer__link--next" aria-label="आगामी: Summary">
+          <a href="../summary/" class="md-footer__link md-footer__link--next" aria-label="आगामी: सारांश">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 आगामी
               </span>
               <div class="md-ellipsis">
-                Summary
+                सारांश
               </div>
             </div>
             <div class="md-footer__button md-icon">

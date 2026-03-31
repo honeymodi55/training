@@ -3845,7 +3845,7 @@
 <p>이것이 중요해지는 것은 새 블록을 추가할 때입니다. 이 블록은 workflow 블록 아래에 있으며, 더 이상 workflow 안에 있지 않습니다. 중괄호를 사용하며, 여기서 워크플로우가 생성한 모든 파일을 어디에 저장할지 Nextflow에 알립니다.</p>
 <p>앞서 만든 변수 이름을 가져와 여기에 넣고 중괄호를 추가합니다. Nextflow에게 path를 사용하도록 지정합니다. 따옴표 안에 점(.)을 사용하면 Nextflow가 파일을 results 디렉토리의 루트에 저장합니다. 하위 디렉토리 없이 저장됩니다.</p>
 <p>워크플로우를 다시 실행합니다. <code>nextflow run hello-world.nf</code>를 실행하면 기본적으로 동일하게 보일 것입니다. Nextflow에서 실제로 변경된 것은 없습니다. 동일한 작업을 수행하며, work 디렉토리에서 실행됩니다.</p>
-<p>하지만 이제 <code>ls results/</code>를 실행하면 results라는 새 디렉토리가 생성된 것을 확인할 수 있습니다. 이것이 워크플로우 게시의 기본 기본 디렉토리입니다. 그 안에 <em>output.txt</em> 파일이 있습니다.</p>
+<p>하지만 이제 <code>ls results/</code>를 실행하면 results라는 새 디렉토리가 생성된 것을 확인할 수 있습니다. 이것이 워크플로우 게시의 기본 디렉토리입니다. 그 안에 <em>output.txt</em> 파일이 있습니다.</p>
 <p><code>ls -l results</code>를 실행하면 이것이 실제로 work 디렉토리에 대한 소프트 링크임을 확인할 수 있습니다. 실제 파일이 아니라 work 디렉토리에 링크되어 있으며, 모든 파일이 수집되어 있습니다.</p>
 <h2 id="22">2.2. 사용자 정의 위치 설정<a class="headerlink" href="#22" title="Permanent link">&para;</a></h2>
 <p>"results"는 이 경로의 기본 이름입니다. 워크플로우를 다시 실행할 때 단일 하이픈을 사용하면(코어 Nextflow 옵션이므로) <code>"-output-dir myresults"</code>와 같이 지정할 수 있습니다. 줄여서 <code>"-o"</code>를 사용할 수도 있습니다. 그러면 파일이 저장되는 기본 디렉토리가 변경되며, <em>myresults/</em> 아래에 <em>output.txt</em>가 생성됩니다.</p>

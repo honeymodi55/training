@@ -47,7 +47,7 @@
     
     
       
-        <title>Part 6: Configuration - training.nextflow.io</title>
+        <title>Część 6: Konfiguracja - training.nextflow.io</title>
       
     
     
@@ -157,7 +157,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#part-6-configuration" class="md-skip">
+        <a href="#czesc-6-konfiguracja" class="md-skip">
           Przejdź do treści
         </a>
       
@@ -196,7 +196,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Part 6: Configuration
+              Część 6: Konfiguracja
             
           </span>
         </div>
@@ -2345,7 +2345,7 @@
   <span class="md-ellipsis">
     
   
-    Development Environment
+    Środowisko programistyczne
   
 
     
@@ -2373,7 +2373,7 @@
   <span class="md-ellipsis">
     
   
-    Essential Nextflow Scripting Patterns
+    Podstawowe Wzorce Skryptowania w Nextflow
   
 
     
@@ -2401,7 +2401,7 @@
   <span class="md-ellipsis">
     
   
-    Metadata and meta maps
+    Metadane i mapy metadanych
   
 
     
@@ -2429,7 +2429,7 @@
   <span class="md-ellipsis">
     
   
-    Splitting and Grouping
+    Podział i grupowanie
   
 
     
@@ -2457,7 +2457,7 @@
   <span class="md-ellipsis">
     
   
-    Testing with nf-test
+    Testowanie z nf-test
   
 
     
@@ -2485,7 +2485,7 @@
   <span class="md-ellipsis">
     
   
-    Workflows of Workflows
+    Workflow'y Workflow'ów
   
 
     
@@ -2513,7 +2513,7 @@
   <span class="md-ellipsis">
     
   
-    File input processing
+    Przetwarzanie plików wejściowych
   
 
     
@@ -2541,7 +2541,7 @@
   <span class="md-ellipsis">
     
   
-    Debugging Workflows
+    Debugowanie Workflow'ów
   
 
     
@@ -2582,7 +2582,7 @@
   <span class="md-ellipsis">
     
   
-    Plugin Development
+    Tworzenie wtyczek
   
 
     
@@ -2598,7 +2598,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Plugin Development
+    Tworzenie wtyczek
   
 
           </label>
@@ -2618,7 +2618,7 @@
   <span class="md-ellipsis">
     
   
-    Plugin Development
+    Tworzenie wtyczek
   
 
     
@@ -2646,7 +2646,7 @@
   <span class="md-ellipsis">
     
   
-    Part 1: Plugin Basics
+    Część 1: Podstawy wtyczek
   
 
     
@@ -2674,7 +2674,7 @@
   <span class="md-ellipsis">
     
   
-    Part 2: Create a Plugin Project
+    02 create project
   
 
     
@@ -2702,7 +2702,7 @@
   <span class="md-ellipsis">
     
   
-    Part 3: Custom Functions
+    Część 3: Własne funkcje
   
 
     
@@ -2730,7 +2730,7 @@
   <span class="md-ellipsis">
     
   
-    Part 4: Testing
+    Część 4: Testowanie
   
 
     
@@ -2758,7 +2758,7 @@
   <span class="md-ellipsis">
     
   
-    Part 5: Trace Observers
+    Część 5: Obserwatory śladów
   
 
     
@@ -2795,7 +2795,7 @@
   <span class="md-ellipsis">
     
   
-    Part 6: Configuration
+    Część 6: Konfiguracja
   
 
     
@@ -2813,7 +2813,7 @@
   <span class="md-ellipsis">
     
   
-    Part 6: Configuration
+    Część 6: Konfiguracja
   
 
     
@@ -2833,22 +2833,22 @@
   </label>
   <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
      <li class="md-nav__item">
-  <a href="#1-make-the-decorator-configurable" class="md-nav__link">
+  <a href="#1-uczynienie-dekoratora-konfigurowalnym" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Make the decorator configurable
+        1. Uczynienie dekoratora konfigurowalnym
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Make the decorator configurable">
+    <nav class="md-nav" aria-label="1. Uczynienie dekoratora konfigurowalnym">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#11-add-the-configuration-reading-this-will-fail" class="md-nav__link">
+  <a href="#11-dodanie-odczytu-konfiguracji-to-sie-nie-powiedzie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.1. Add the configuration reading (this will fail!)
+        1.1. Dodanie odczytu konfiguracji (to się nie powiedzie!)
       
     </span>
   </a>
@@ -2856,10 +2856,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#12-observe-the-error" class="md-nav__link">
+  <a href="#12-analiza-bedu" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.2. Observe the error
+        1.2. Analiza błędu
       
     </span>
   </a>
@@ -2867,10 +2867,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#13-fix-by-declaring-instance-variables" class="md-nav__link">
+  <a href="#13-naprawa-przez-deklaracje-zmiennych-instancji" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3. Fix by declaring instance variables
+        1.3. Naprawa przez deklarację zmiennych instancji
       
     </span>
   </a>
@@ -2878,10 +2878,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#14-build-and-test" class="md-nav__link">
+  <a href="#14-budowanie-i-testowanie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.4. Build and test
+        1.4. Budowanie i testowanie
       
     </span>
   </a>
@@ -2892,22 +2892,22 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#2-make-the-task-counter-configurable" class="md-nav__link">
+  <a href="#2-uczynienie-licznika-zadan-konfigurowalnym" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Make the task counter configurable
+        2. Uczynienie licznika zadań konfigurowalnym
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Make the task counter configurable">
+    <nav class="md-nav" aria-label="2. Uczynienie licznika zadań konfigurowalnym">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-build-and-test" class="md-nav__link">
+  <a href="#21-budowanie-i-testowanie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1. Build and test
+        2.1. Budowanie i testowanie
       
     </span>
   </a>
@@ -2918,22 +2918,22 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#3-formal-configuration-with-configscope" class="md-nav__link">
+  <a href="#3-formalna-konfiguracja-z-configscope" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Formal configuration with ConfigScope
+        3. Formalna konfiguracja z ConfigScope
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Formal configuration with ConfigScope">
+    <nav class="md-nav" aria-label="3. Formalna konfiguracja z ConfigScope">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-create-the-config-class" class="md-nav__link">
+  <a href="#31-tworzenie-klasy-konfiguracji" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1. Create the config class
+        3.1. Tworzenie klasy konfiguracji
       
     </span>
   </a>
@@ -2941,10 +2941,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#32-register-the-config-class" class="md-nav__link">
+  <a href="#32-rejestracja-klasy-konfiguracji" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.2. Register the config class
+        3.2. Rejestracja klasy konfiguracji
       
     </span>
   </a>
@@ -2952,10 +2952,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#33-build-and-test" class="md-nav__link">
+  <a href="#33-budowanie-i-testowanie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.3. Build and test
+        3.3. Budowanie i testowanie
       
     </span>
   </a>
@@ -2966,19 +2966,19 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#takeaway" class="md-nav__link">
+  <a href="#podsumowanie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Takeaway
+        Podsumowanie
       
     </span>
   </a>
   
 </li>  <li class="md-nav__item">
-  <a href="#whats-next" class="md-nav__link">
+  <a href="#co-dalej" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What's next?
+        Co dalej?
       
     </span>
   </a>
@@ -3193,7 +3193,7 @@
   <span class="md-ellipsis">
     
   
-    Summary
+    Podsumowanie
   
 
     
@@ -3221,7 +3221,7 @@
   <span class="md-ellipsis">
     
   
-    Next Steps
+    Kolejne kroki
   
 
     
@@ -3686,22 +3686,22 @@
   </label>
   <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
      <li class="md-nav__item">
-  <a href="#1-make-the-decorator-configurable" class="md-nav__link">
+  <a href="#1-uczynienie-dekoratora-konfigurowalnym" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Make the decorator configurable
+        1. Uczynienie dekoratora konfigurowalnym
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Make the decorator configurable">
+    <nav class="md-nav" aria-label="1. Uczynienie dekoratora konfigurowalnym">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#11-add-the-configuration-reading-this-will-fail" class="md-nav__link">
+  <a href="#11-dodanie-odczytu-konfiguracji-to-sie-nie-powiedzie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.1. Add the configuration reading (this will fail!)
+        1.1. Dodanie odczytu konfiguracji (to się nie powiedzie!)
       
     </span>
   </a>
@@ -3709,10 +3709,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#12-observe-the-error" class="md-nav__link">
+  <a href="#12-analiza-bedu" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.2. Observe the error
+        1.2. Analiza błędu
       
     </span>
   </a>
@@ -3720,10 +3720,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#13-fix-by-declaring-instance-variables" class="md-nav__link">
+  <a href="#13-naprawa-przez-deklaracje-zmiennych-instancji" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3. Fix by declaring instance variables
+        1.3. Naprawa przez deklarację zmiennych instancji
       
     </span>
   </a>
@@ -3731,10 +3731,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#14-build-and-test" class="md-nav__link">
+  <a href="#14-budowanie-i-testowanie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.4. Build and test
+        1.4. Budowanie i testowanie
       
     </span>
   </a>
@@ -3745,22 +3745,22 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#2-make-the-task-counter-configurable" class="md-nav__link">
+  <a href="#2-uczynienie-licznika-zadan-konfigurowalnym" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Make the task counter configurable
+        2. Uczynienie licznika zadań konfigurowalnym
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Make the task counter configurable">
+    <nav class="md-nav" aria-label="2. Uczynienie licznika zadań konfigurowalnym">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-build-and-test" class="md-nav__link">
+  <a href="#21-budowanie-i-testowanie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1. Build and test
+        2.1. Budowanie i testowanie
       
     </span>
   </a>
@@ -3771,22 +3771,22 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#3-formal-configuration-with-configscope" class="md-nav__link">
+  <a href="#3-formalna-konfiguracja-z-configscope" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Formal configuration with ConfigScope
+        3. Formalna konfiguracja z ConfigScope
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Formal configuration with ConfigScope">
+    <nav class="md-nav" aria-label="3. Formalna konfiguracja z ConfigScope">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-create-the-config-class" class="md-nav__link">
+  <a href="#31-tworzenie-klasy-konfiguracji" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1. Create the config class
+        3.1. Tworzenie klasy konfiguracji
       
     </span>
   </a>
@@ -3794,10 +3794,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#32-register-the-config-class" class="md-nav__link">
+  <a href="#32-rejestracja-klasy-konfiguracji" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.2. Register the config class
+        3.2. Rejestracja klasy konfiguracji
       
     </span>
   </a>
@@ -3805,10 +3805,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#33-build-and-test" class="md-nav__link">
+  <a href="#33-budowanie-i-testowanie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.3. Build and test
+        3.3. Budowanie i testowanie
       
     </span>
   </a>
@@ -3819,19 +3819,19 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#takeaway" class="md-nav__link">
+  <a href="#podsumowanie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Takeaway
+        Podsumowanie
       
     </span>
   </a>
   
 </li>  <li class="md-nav__item">
-  <a href="#whats-next" class="md-nav__link">
+  <a href="#co-dalej" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What's next?
+        Co dalej?
       
     </span>
   </a>
@@ -4094,80 +4094,75 @@
 </a>
  
 
-<h1 id="part-6-configuration">Part 6: Configuration<a class="headerlink" href="#part-6-configuration" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Translation in Progress</p>
-<p>This page has not yet been translated into your language.
-You are viewing the original English content.</p>
-<p>Want to help? See our <a href="https://github.com/nextflow-io/training/blob/master/TRANSLATING.md">translation guide</a>.</p>
-</div>
-<p>Your plugin has custom functions and an observer, but everything is hardcoded.
-Users can't turn the task counter off, or change the decorator, without editing the source code and rebuilding.</p>
-<p>In Part 1, you used <code class="highlight"><span class="n">validation</span><span class="w"> </span><span class="o">{}</span></code> and <code class="highlight"><span class="n">co2footprint</span><span class="w"> </span><span class="o">{}</span></code> blocks in <code>nextflow.config</code> to control how nf-schema and nf-co2footprint behaved.
-Those config blocks exist because the plugin authors built that capability in.
-In this section, you'll do the same for your own plugin.</p>
-<p><strong>Objectives:</strong></p>
+<h1 id="czesc-6-konfiguracja">Część 6: Konfiguracja<a class="headerlink" href="#czesc-6-konfiguracja" title="Permanent link">&para;</a></h1>
+<p><span class="ai-translation-notice"><span class="twemoji ai-translation-notice-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2z"/></svg></span> Tłumaczenie wspomagane przez AI - <a href="https://github.com/nextflow-io/training/blob/master/TRANSLATING.md">dowiedz się więcej i zasugeruj ulepszenia</a></span></p>
+<p>Twój plugin ma własne funkcje i obserwator, ale wszystko jest zakodowane na stałe.
+Użytkownicy nie mogą wyłączyć licznika zadań ani zmienić dekoratora bez edytowania kodu źródłowego i ponownego budowania.</p>
+<p>W Części 1 używałeś bloków <code class="highlight"><span class="n">validation</span><span class="w"> </span><span class="o">{}</span></code> i <code class="highlight"><span class="n">co2footprint</span><span class="w"> </span><span class="o">{}</span></code> w <code>nextflow.config</code>, aby kontrolować zachowanie nf-schema i nf-co2footprint.
+Te bloki konfiguracyjne istnieją, ponieważ autorzy pluginów wbudowali tę możliwość.
+W tej sekcji zrobisz to samo dla własnego pluginu.</p>
+<p><strong>Cele:</strong></p>
 <ol>
-<li>Let users customize the greeting decorator's prefix and suffix</li>
-<li>Let users enable or disable the plugin through <code>nextflow.config</code></li>
-<li>Register a formal config scope so Nextflow recognizes the <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{}</span></code> block</li>
+<li>Pozwól użytkownikom dostosować prefiks i sufiks dekoratora powitania</li>
+<li>Pozwól użytkownikom włączać i wyłączać plugin przez <code>nextflow.config</code></li>
+<li>Zarejestruj formalny zakres konfiguracji, aby Nextflow rozpoznawał blok <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{}</span></code></li>
 </ol>
-<p><strong>What you'll change:</strong></p>
+<p><strong>Co zmienisz:</strong></p>
 <table>
 <thead>
 <tr>
-<th>File</th>
-<th>Change</th>
+<th>Plik</th>
+<th>Zmiana</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>GreetingExtension.groovy</code></td>
-<td>Read prefix/suffix config in <code>init()</code></td>
+<td>Odczyt konfiguracji prefiksu/sufiksu w <code>init()</code></td>
 </tr>
 <tr>
 <td><code>GreetingFactory.groovy</code></td>
-<td>Read config values to control observer creation</td>
+<td>Odczyt wartości konfiguracji do sterowania tworzeniem obserwatora</td>
 </tr>
 <tr>
 <td><code>GreetingConfig.groovy</code></td>
-<td>New file: formal <code>@ConfigScope</code> class</td>
+<td>Nowy plik: formalna klasa <code>@ConfigScope</code></td>
 </tr>
 <tr>
 <td><code>build.gradle</code></td>
-<td>Register the config class as an extension point</td>
+<td>Rejestracja klasy konfiguracji jako punktu rozszerzenia</td>
 </tr>
 <tr>
 <td><code>nextflow.config</code></td>
-<td>Add a <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{}</span></code> block to test it</td>
+<td>Dodanie bloku <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{}</span></code> do testów</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition tip">
-<p class="admonition-title">Starting from here?</p>
-<p>If you're joining at this part, copy the solution from Part 5 to use as your starting point:</p>
+<p class="admonition-title">Wskazówka</p>
+<p>Jeśli zaczynasz od tej części, skopiuj rozwiązanie z Części 5 jako punkt startowy:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cp<span class="w"> </span>-r<span class="w"> </span>solutions/5-observers/*<span class="w"> </span>.
 </code></pre></div>
 </div>
 <div class="admonition info">
-<p class="admonition-title">Official documentation</p>
-<p>For comprehensive configuration details, see the <a href="https://nextflow.io/docs/latest/developer/config-scopes.html">Nextflow config scopes documentation</a>.</p>
+<p class="admonition-title">Oficjalna dokumentacja</p>
+<p>Szczegółowe informacje o konfiguracji znajdziesz w <a href="https://nextflow.io/docs/latest/developer/config-scopes.html">dokumentacji zakresów konfiguracji Nextflow</a>.</p>
 </div>
 <hr />
-<h2 id="1-make-the-decorator-configurable">1. Make the decorator configurable<a class="headerlink" href="#1-make-the-decorator-configurable" title="Permanent link">&para;</a></h2>
-<p>The <code>decorateGreeting</code> function wraps every greeting in <code>*** ... ***</code>.
-Users might want different markers, but right now the only way to change them is to edit the source code and rebuild.</p>
-<p>The Nextflow session provides a method called <code>session.config.navigate()</code> that reads nested values from <code>nextflow.config</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Read &#39;greeting.prefix&#39; from nextflow.config, defaulting to &#39;***&#39;</span>
+<h2 id="1-uczynienie-dekoratora-konfigurowalnym">1. Uczynienie dekoratora konfigurowalnym<a class="headerlink" href="#1-uczynienie-dekoratora-konfigurowalnym" title="Permanent link">&para;</a></h2>
+<p>Funkcja <code>decorateGreeting</code> opakowuje każde powitanie w <code>*** ... ***</code>.
+Użytkownicy mogą chcieć innych znaczników, ale obecnie jedynym sposobem ich zmiany jest edycja kodu źródłowego i ponowne zbudowanie projektu.</p>
+<p>Sesja Nextflow udostępnia metodę <code>session.config.navigate()</code>, która odczytuje zagnieżdżone wartości z <code>nextflow.config</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Odczytaj &#39;greeting.prefix&#39; z nextflow.config, domyślnie &#39;***&#39;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">final</span><span class="w"> </span><span class="n">prefix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">session</span><span class="o">.</span><span class="na">config</span><span class="o">.</span><span class="na">navigate</span><span class="o">(</span><span class="s1">&#39;greeting.prefix&#39;</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;***&#39;</span><span class="o">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">String</span>
 </code></pre></div>
-<p>This corresponds to a config block in the user's <code>nextflow.config</code>:</p>
+<p>Odpowiada to blokowi konfiguracyjnemu w <code>nextflow.config</code> użytkownika:</p>
 <div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">greeting</span><span class="w"> </span><span class="o">{</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="n">prefix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&gt;&gt;&gt;&#39;</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="o">}</span>
 </code></pre></div>
-<h3 id="11-add-the-configuration-reading-this-will-fail">1.1. Add the configuration reading (this will fail!)<a class="headerlink" href="#11-add-the-configuration-reading-this-will-fail" title="Permanent link">&para;</a></h3>
-<p>Edit <code>GreetingExtension.groovy</code> to read configuration in <code>init()</code> and use it in <code>decorateGreeting()</code>:</p>
+<h3 id="11-dodanie-odczytu-konfiguracji-to-sie-nie-powiedzie">1.1. Dodanie odczytu konfiguracji (to się nie powiedzie!)<a class="headerlink" href="#11-dodanie-odczytu-konfiguracji-to-sie-nie-powiedzie" title="Permanent link">&para;</a></h3>
+<p>Edytuj <code>GreetingExtension.groovy</code>, aby odczytywać konfigurację w <code>init()</code> i używać jej w <code>decorateGreeting()</code>:</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">GreetingExtension.groovy</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-35">35</a></span>
 <span class="normal"><a href="#__codelineno-3-36">36</a></span>
 <span class="normal"><a href="#__codelineno-3-37">37</a></span>
@@ -4191,26 +4186,26 @@ Users might want different markers, but right now the only way to change them is
 <a id="__codelineno-3-37" name="__codelineno-3-37"></a>
 <a id="__codelineno-3-38" name="__codelineno-3-38"></a><span class="w">    </span><span class="nd">@Override</span>
 <a id="__codelineno-3-39" name="__codelineno-3-39"></a><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">init</span><span class="o">(</span><span class="n">Session</span><span class="w"> </span><span class="n">session</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
-<a id="__codelineno-3-40" name="__codelineno-3-40"></a><span class="w">        </span><span class="c1">// Read configuration with defaults</span>
+<a id="__codelineno-3-40" name="__codelineno-3-40"></a><span class="w">        </span><span class="c1">// Odczytaj konfigurację z wartościami domyślnymi</span>
 <a id="__codelineno-3-41" name="__codelineno-3-41"></a><span class="hll"><span class="w">        </span><span class="n">prefix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">session</span><span class="o">.</span><span class="na">config</span><span class="o">.</span><span class="na">navigate</span><span class="o">(</span><span class="s1">&#39;greeting.prefix&#39;</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;***&#39;</span><span class="o">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">String</span>
 </span><a id="__codelineno-3-42" name="__codelineno-3-42"></a><span class="hll"><span class="w">        </span><span class="n">suffix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">session</span><span class="o">.</span><span class="na">config</span><span class="o">.</span><span class="na">navigate</span><span class="o">(</span><span class="s1">&#39;greeting.suffix&#39;</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;***&#39;</span><span class="o">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">String</span>
 </span><a id="__codelineno-3-43" name="__codelineno-3-43"></a><span class="w">    </span><span class="o">}</span>
 <a id="__codelineno-3-44" name="__codelineno-3-44"></a>
-<a id="__codelineno-3-45" name="__codelineno-3-45"></a><span class="w">    </span><span class="c1">// ... other methods unchanged ...</span>
+<a id="__codelineno-3-45" name="__codelineno-3-45"></a><span class="w">    </span><span class="c1">// ... pozostałe metody bez zmian ...</span>
 <a id="__codelineno-3-46" name="__codelineno-3-46"></a>
 <a id="__codelineno-3-47" name="__codelineno-3-47"></a><span class="w">    </span><span class="cm">/**</span>
-<a id="__codelineno-3-48" name="__codelineno-3-48"></a><span class="cm">    * Decorate a greeting with celebratory markers</span>
+<a id="__codelineno-3-48" name="__codelineno-3-48"></a><span class="cm">    * Udekoruj powitanie świątecznymi znacznikami</span>
 <a id="__codelineno-3-49" name="__codelineno-3-49"></a><span class="cm">    */</span>
 <a id="__codelineno-3-50" name="__codelineno-3-50"></a><span class="w">    </span><span class="nd">@Function</span>
 <a id="__codelineno-3-51" name="__codelineno-3-51"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">decorateGreeting</span><span class="o">(</span><span class="n">String</span><span class="w"> </span><span class="n">greeting</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
 <a id="__codelineno-3-52" name="__codelineno-3-52"></a><span class="hll"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;${prefix} ${greeting} ${suffix}&quot;</span>
 </span><a id="__codelineno-3-53" name="__codelineno-3-53"></a><span class="w">    </span><span class="o">}</span>
 </code></pre></div></td></tr></table></div>
-<p>Try to build:</p>
+<p>Spróbuj zbudować:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span><span class="w"> </span>nf-greeting<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>assemble
 </code></pre></div>
-<h3 id="12-observe-the-error">1.2. Observe the error<a class="headerlink" href="#12-observe-the-error" title="Permanent link">&para;</a></h3>
-<p>The build fails:</p>
+<h3 id="12-analiza-bedu">1.2. Analiza błędu<a class="headerlink" href="#12-analiza-bedu" title="Permanent link">&para;</a></h3>
+<p>Budowanie kończy się niepowodzeniem:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="go">&gt; Task :compileGroovy FAILED</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="go">GreetingExtension.groovy: 30: [Static type checking] - The variable [prefix] is undeclared.</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="go"> @ line 30, column 9.</span>
@@ -4219,10 +4214,10 @@ Users might want different markers, but right now the only way to change them is
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
 <a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="go">GreetingExtension.groovy: 31: [Static type checking] - The variable [suffix] is undeclared.</span>
 </code></pre></div>
-<p>In Groovy (and Java), you must <em>declare</em> a variable before using it.
-The code tries to assign values to <code>prefix</code> and <code>suffix</code>, but the class has no fields with those names.</p>
-<h3 id="13-fix-by-declaring-instance-variables">1.3. Fix by declaring instance variables<a class="headerlink" href="#13-fix-by-declaring-instance-variables" title="Permanent link">&para;</a></h3>
-<p>Add variable declarations at the top of the class, right after the opening brace:</p>
+<p>W Groovy (i Javie) musisz <em>zadeklarować</em> zmienną przed jej użyciem.
+Kod próbuje przypisać wartości do <code>prefix</code> i <code>suffix</code>, ale klasa nie ma pól o tych nazwach.</p>
+<h3 id="13-naprawa-przez-deklaracje-zmiennych-instancji">1.3. Naprawa przez deklarację zmiennych instancji<a class="headerlink" href="#13-naprawa-przez-deklaracje-zmiennych-instancji" title="Permanent link">&para;</a></h3>
+<p>Dodaj deklaracje zmiennych na początku klasy, zaraz po otwierającym nawiasie klamrowym:</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">GreetingExtension.groovy</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-35">35</a></span>
 <span class="normal"><a href="#__codelineno-6-36">36</a></span>
 <span class="normal"><a href="#__codelineno-6-37">37</a></span>
@@ -4244,33 +4239,33 @@ The code tries to assign values to <code>prefix</code> and <code>suffix</code>, 
 </span><a id="__codelineno-6-40" name="__codelineno-6-40"></a>
 <a id="__codelineno-6-41" name="__codelineno-6-41"></a><span class="w">    </span><span class="nd">@Override</span>
 <a id="__codelineno-6-42" name="__codelineno-6-42"></a><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">init</span><span class="o">(</span><span class="n">Session</span><span class="w"> </span><span class="n">session</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
-<a id="__codelineno-6-43" name="__codelineno-6-43"></a><span class="w">        </span><span class="c1">// Read configuration with defaults</span>
+<a id="__codelineno-6-43" name="__codelineno-6-43"></a><span class="w">        </span><span class="c1">// Odczytaj konfigurację z wartościami domyślnymi</span>
 <a id="__codelineno-6-44" name="__codelineno-6-44"></a><span class="w">        </span><span class="n">prefix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">session</span><span class="o">.</span><span class="na">config</span><span class="o">.</span><span class="na">navigate</span><span class="o">(</span><span class="s1">&#39;greeting.prefix&#39;</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;***&#39;</span><span class="o">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">String</span>
 <a id="__codelineno-6-45" name="__codelineno-6-45"></a><span class="w">        </span><span class="n">suffix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">session</span><span class="o">.</span><span class="na">config</span><span class="o">.</span><span class="na">navigate</span><span class="o">(</span><span class="s1">&#39;greeting.suffix&#39;</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;***&#39;</span><span class="o">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">String</span>
 <a id="__codelineno-6-46" name="__codelineno-6-46"></a><span class="w">    </span><span class="o">}</span>
 <a id="__codelineno-6-47" name="__codelineno-6-47"></a>
-<a id="__codelineno-6-48" name="__codelineno-6-48"></a><span class="w">    </span><span class="c1">// ... rest of class unchanged ...</span>
+<a id="__codelineno-6-48" name="__codelineno-6-48"></a><span class="w">    </span><span class="c1">// ... reszta klasy bez zmian ...</span>
 </code></pre></div></td></tr></table></div>
-<p>These two lines declare <strong>instance variables</strong> (also called fields) that belong to each <code>GreetingExtension</code> object.
-The <code>private</code> keyword means only code inside this class can access them.
-Each variable is initialized with a default value of <code>'***'</code>.</p>
-<p>When the plugin loads, Nextflow calls the <code>init()</code> method, which overwrites these defaults with whatever the user has set in <code>nextflow.config</code>.
-If the user hasn't set anything, <code>navigate()</code> returns the same default, so the behavior is unchanged.
-The <code>decorateGreeting()</code> method then reads these fields each time it runs.</p>
+<p>Te dwie linie deklarują <strong>zmienne instancji</strong> (zwane też polami), które należą do każdego obiektu <code>GreetingExtension</code>.
+Słowo kluczowe <code>private</code> oznacza, że tylko kod wewnątrz tej klasy może się do nich odwoływać.
+Każda zmienna jest inicjalizowana domyślną wartością <code>'***'</code>.</p>
+<p>Gdy plugin się ładuje, Nextflow wywołuje metodę <code>init()</code>, która nadpisuje te wartości domyślne tym, co użytkownik ustawił w <code>nextflow.config</code>.
+Jeśli użytkownik nic nie ustawił, <code>navigate()</code> zwraca tę samą wartość domyślną, więc zachowanie pozostaje niezmienione.
+Metoda <code>decorateGreeting()</code> odczytuje te pola przy każdym wywołaniu.</p>
 <div class="admonition tip">
-<p class="admonition-title">Learning from errors</p>
-<p>This "declare before use" pattern is fundamental to Java/Groovy but unfamiliar if you come from Python or R where variables spring into existence when you first assign them.
-Experiencing this error once helps you recognize and fix it quickly in the future.</p>
+<p class="admonition-title">Wskazówka</p>
+<p>Ten wzorzec „deklaruj przed użyciem" jest fundamentalny dla Javy i Groovy, ale może być nieznany, jeśli przychodzisz z Pythona lub R, gdzie zmienne pojawiają się w momencie pierwszego przypisania.
+Napotkanie tego błędu raz pomaga szybko go rozpoznawać i naprawiać w przyszłości.</p>
 </div>
-<h3 id="14-build-and-test">1.4. Build and test<a class="headerlink" href="#14-build-and-test" title="Permanent link">&para;</a></h3>
-<p>Build and install:</p>
+<h3 id="14-budowanie-i-testowanie">1.4. Budowanie i testowanie<a class="headerlink" href="#14-budowanie-i-testowanie" title="Permanent link">&para;</a></h3>
+<p>Zbuduj i zainstaluj:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>make<span class="w"> </span>install<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
 </code></pre></div>
-<p>Update <code>nextflow.config</code> to customize the decoration:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">After</label><label for="__tabbed_1_2">Before</label></div>
+<p>Zaktualizuj <code>nextflow.config</code>, aby dostosować dekorację:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Po</label><label for="__tabbed_1_2">Przed</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// Configuration for plugin development exercises</span>
+<div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// Konfiguracja dla ćwiczeń z tworzenia pluginów</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">plugins</span><span class="w"> </span><span class="o">{</span>
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="s1">&#39;nf-schema@2.6.1&#39;</span>
 <a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="s1">&#39;nf-greeting@0.1.0&#39;</span>
@@ -4283,7 +4278,7 @@ Experiencing this error once helps you recognize and fix it quickly in the futur
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">// Configuration for plugin development exercises</span>
+<div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">// Konfiguracja dla ćwiczeń z tworzenia pluginów</span>
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">plugins</span><span class="w"> </span><span class="o">{</span>
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="s1">&#39;nf-schema@2.6.1&#39;</span>
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="s1">&#39;nf-greeting@0.1.0&#39;</span>
@@ -4292,23 +4287,23 @@ Experiencing this error once helps you recognize and fix it quickly in the futur
 </div>
 </div>
 </div>
-<p>Run the pipeline:</p>
+<p>Uruchom pipeline:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>nextflow<span class="w"> </span>run<span class="w"> </span>greet.nf<span class="w"> </span>-ansi-log<span class="w"> </span><span class="nb">false</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Output (partial)</span><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="go">Decorated: &gt;&gt;&gt; Hello &lt;&lt;&lt;</span>
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="go">Decorated: &gt;&gt;&gt; Bonjour &lt;&lt;&lt;</span>
 <a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="go">...</span>
 </code></pre></div>
-<p>The decorator now uses the custom prefix and suffix from the config file.</p>
-<p>Note that Nextflow prints an "Unrecognized config option" warning because nothing has declared <code>greeting</code> as a valid scope yet.
-The value still gets read correctly via <code>navigate()</code>, but Nextflow flags it as unrecognized.
-You will fix this in Section 3.</p>
+<p>Dekorator używa teraz niestandardowego prefiksu i sufiksu z pliku konfiguracyjnego.</p>
+<p>Zwróć uwagę, że Nextflow wyświetla ostrzeżenie „Unrecognized config option", ponieważ nic nie zadeklarowało jeszcze <code>greeting</code> jako prawidłowego zakresu konfiguracji.
+Wartość jest nadal poprawnie odczytywana przez <code>navigate()</code>, ale Nextflow oznacza ją jako nierozpoznaną.
+Naprawisz to w Sekcji 3.</p>
 <hr />
-<h2 id="2-make-the-task-counter-configurable">2. Make the task counter configurable<a class="headerlink" href="#2-make-the-task-counter-configurable" title="Permanent link">&para;</a></h2>
-<p>The observer factory currently creates observers unconditionally.
-Users should be able to disable the plugin entirely through configuration.</p>
-<p>The factory has access to the Nextflow session and its configuration, so it is the right place to read the <code>enabled</code> setting and decide whether to create observers.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">After</label><label for="__tabbed_2_2">Before</label></div>
+<h2 id="2-uczynienie-licznika-zadan-konfigurowalnym">2. Uczynienie licznika zadań konfigurowalnym<a class="headerlink" href="#2-uczynienie-licznika-zadan-konfigurowalnym" title="Permanent link">&para;</a></h2>
+<p>Fabryka obserwatorów tworzy je obecnie bezwarunkowo.
+Użytkownicy powinni mieć możliwość całkowitego wyłączenia pluginu przez konfigurację.</p>
+<p>Fabryka ma dostęp do sesji Nextflow i jej konfiguracji, więc to właściwe miejsce do odczytu ustawienia <code>enabled</code> i decydowania, czy tworzyć obserwatory.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Po</label><label for="__tabbed_2_2">Przed</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">GreetingFactory.groovy</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-31">31</a></span>
@@ -4350,22 +4345,22 @@ Users should be able to disable the plugin entirely through configuration.</p>
 </div>
 </div>
 </div>
-<p>The factory now reads <code>greeting.enabled</code> from the config and returns an empty list if the user has set it to <code>false</code>.
-When the list is empty, no observers are created, so the plugin's lifecycle hooks are silently skipped.</p>
-<h3 id="21-build-and-test">2.1. Build and test<a class="headerlink" href="#21-build-and-test" title="Permanent link">&para;</a></h3>
-<p>Rebuild and install the plugin:</p>
+<p>Fabryka odczytuje teraz <code>greeting.enabled</code> z konfiguracji i zwraca pustą listę, jeśli użytkownik ustawił tę wartość na <code>false</code>.
+Gdy lista jest pusta, żadne obserwatory nie są tworzone, a hooki cyklu życia pluginu są po cichu pomijane.</p>
+<h3 id="21-budowanie-i-testowanie">2.1. Budowanie i testowanie<a class="headerlink" href="#21-budowanie-i-testowanie" title="Permanent link">&para;</a></h3>
+<p>Przebuduj i zainstaluj plugin:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nb">cd</span><span class="w"> </span>nf-greeting<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>install<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
 </code></pre></div>
-<p>Run the pipeline to confirm everything still works:</p>
+<p>Uruchom pipeline, aby potwierdzić, że wszystko nadal działa:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>nextflow<span class="w"> </span>run<span class="w"> </span>greet.nf<span class="w"> </span>-ansi-log<span class="w"> </span><span class="nb">false</span>
 </code></pre></div>
 <details class="exercise">
-<summary>Disable the plugin entirely</summary>
-<p>Try setting <code>greeting.enabled = false</code> in <code>nextflow.config</code> and run the pipeline again.
-What changes in the output?</p>
+<summary>Ćwiczenie</summary>
+<p>Spróbuj ustawić <code>greeting.enabled = false</code> w <code>nextflow.config</code> i uruchom pipeline ponownie.
+Co zmienia się w wyjściu?</p>
 <details class="solution">
-<summary>Solution</summary>
-<div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1">// Configuration for plugin development exercises</span>
+<summary>Rozwiązanie</summary>
+<div class="highlight"><span class="filename">nextflow.config</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1">// Konfiguracja dla ćwiczeń z tworzenia pluginów</span>
 <a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">plugins</span><span class="w"> </span><span class="o">{</span>
 <a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="s1">&#39;nf-schema@2.6.1&#39;</span>
 <a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="s1">&#39;nf-greeting@0.1.0&#39;</span>
@@ -4375,18 +4370,18 @@ What changes in the output?</p>
 <a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="hll"><span class="w">    </span><span class="n">enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
 </span><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="o">}</span>
 </code></pre></div>
-<p>The "Pipeline is starting!", "Pipeline complete!", and task count messages all disappear because the factory returns an empty list when <code>enabled</code> is false.
-The pipeline itself still runs, but no observers are active.</p>
-<p>Remember to set <code>enabled</code> back to <code>true</code> (or remove the line) before continuing.</p>
+<p>Komunikaty „Pipeline is starting!", „Pipeline complete!" oraz informacja o liczbie zadań znikają, ponieważ fabryka zwraca pustą listę, gdy <code>enabled</code> ma wartość false.
+Sam pipeline nadal działa, ale żadne obserwatory nie są aktywne.</p>
+<p>Pamiętaj, aby ustawić <code>enabled</code> z powrotem na <code>true</code> (lub usunąć tę linię) przed kontynuowaniem.</p>
 </details>
 </details>
 <hr />
-<h2 id="3-formal-configuration-with-configscope">3. Formal configuration with ConfigScope<a class="headerlink" href="#3-formal-configuration-with-configscope" title="Permanent link">&para;</a></h2>
-<p>Your plugin configuration works, but Nextflow still prints "Unrecognized config option" warnings.
-That is because <code>session.config.navigate()</code> only reads values; nothing has told Nextflow that <code>greeting</code> is a valid config scope.</p>
-<p>A <code>ConfigScope</code> class fills that gap.
-It declares what options your plugin accepts, their types, and their defaults.
-It does <strong>not</strong> replace your <code>navigate()</code> calls. Instead, it works alongside them:</p>
+<h2 id="3-formalna-konfiguracja-z-configscope">3. Formalna konfiguracja z ConfigScope<a class="headerlink" href="#3-formalna-konfiguracja-z-configscope" title="Permanent link">&para;</a></h2>
+<p>Konfiguracja Twojego pluginu działa, ale Nextflow nadal wyświetla ostrzeżenia „Unrecognized config option".
+Dzieje się tak, ponieważ <code>session.config.navigate()</code> tylko odczytuje wartości — nic nie poinformowało Nextflow'a, że <code>greeting</code> jest prawidłowym zakresem konfiguracji.</p>
+<p>Klasa <code>ConfigScope</code> wypełnia tę lukę.
+Deklaruje, jakie opcje akceptuje Twój plugin, ich typy i wartości domyślne.
+<strong>Nie</strong> zastępuje wywołań <code>navigate()</code>. Zamiast tego działa obok nich:</p>
 <pre class="mermaid"><code>flowchart LR
     A["nextflow.config&lt;br/&gt;greeting { ... }"] --&gt; B["ConfigScope&lt;br/&gt;&lt;i&gt;declares valid options&lt;/i&gt;"]
     A --&gt; C["navigate()&lt;br/&gt;&lt;i&gt;reads values at runtime&lt;/i&gt;"]
@@ -4395,20 +4390,20 @@ It does <strong>not</strong> replace your <code>navigate()</code> calls. Instead
 
     style B fill:#e8f5e9,stroke:#4caf50
     style C fill:#e3f2fd,stroke:#2196f3</code></pre>
-<p>Without a <code>ConfigScope</code> class, <code>navigate()</code> still works, but:</p>
+<p>Bez klasy <code>ConfigScope</code> <code>navigate()</code> nadal działa, ale:</p>
 <ul>
-<li>Nextflow warns about unrecognized options (as you've seen)</li>
-<li>No IDE autocompletion for users writing <code>nextflow.config</code></li>
-<li>Configuration options aren't self-documenting</li>
-<li>Type conversion is manual (<code>as String</code>, <code>as boolean</code>)</li>
+<li>Nextflow ostrzega o nierozpoznanych opcjach (jak już widziałeś)</li>
+<li>Brak autouzupełniania w IDE dla użytkowników piszących <code>nextflow.config</code></li>
+<li>Opcje konfiguracji nie są samodokumentujące się</li>
+<li>Konwersja typów jest ręczna (<code>as String</code>, <code>as boolean</code>)</li>
 </ul>
-<p>Registering a formal config scope class fixes the warning and addresses all three issues.
-This is the same mechanism behind the <code class="highlight"><span class="n">validation</span><span class="w"> </span><span class="o">{}</span></code> and <code class="highlight"><span class="n">co2footprint</span><span class="w"> </span><span class="o">{}</span></code> blocks you used in Part 1.</p>
-<h3 id="31-create-the-config-class">3.1. Create the config class<a class="headerlink" href="#31-create-the-config-class" title="Permanent link">&para;</a></h3>
-<p>Create a new file:</p>
+<p>Zarejestrowanie formalnej klasy zakresu konfiguracji usuwa ostrzeżenie i rozwiązuje wszystkie trzy problemy.
+To ten sam mechanizm, który stoi za blokami <code class="highlight"><span class="n">validation</span><span class="w"> </span><span class="o">{}</span></code> i <code class="highlight"><span class="n">co2footprint</span><span class="w"> </span><span class="o">{}</span></code> używanymi w Części 1.</p>
+<h3 id="31-tworzenie-klasy-konfiguracji">3.1. Tworzenie klasy konfiguracji<a class="headerlink" href="#31-tworzenie-klasy-konfiguracji" title="Permanent link">&para;</a></h3>
+<p>Utwórz nowy plik:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>touch<span class="w"> </span>nf-greeting/src/main/groovy/training/plugin/GreetingConfig.groovy
 </code></pre></div>
-<p>Add the config class with all three options:</p>
+<p>Dodaj klasę konfiguracji z wszystkimi trzema opcjami:</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">GreetingConfig.groovy</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-18-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-18-3"> 3</a></span>
@@ -4457,9 +4452,9 @@ This is the same mechanism behind the <code class="highlight"><span class="n">va
 <a id="__codelineno-18-6" name="__codelineno-18-6"></a><span class="kn">import</span><span class="w"> </span><span class="nn">nextflow.script.dsl.Description</span>
 <a id="__codelineno-18-7" name="__codelineno-18-7"></a>
 <a id="__codelineno-18-8" name="__codelineno-18-8"></a><span class="cm">/**</span>
-<a id="__codelineno-18-9" name="__codelineno-18-9"></a><span class="cm"> * Configuration options for the nf-greeting plugin.</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9"></a><span class="cm"> * Opcje konfiguracji dla pluginu nf-greeting.</span>
 <a id="__codelineno-18-10" name="__codelineno-18-10"></a><span class="cm"> *</span>
-<a id="__codelineno-18-11" name="__codelineno-18-11"></a><span class="cm"> * Users configure these in nextflow.config:</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11"></a><span class="cm"> * Użytkownicy konfigurują je w nextflow.config:</span>
 <a id="__codelineno-18-12" name="__codelineno-18-12"></a><span class="cm"> *</span>
 <a id="__codelineno-18-13" name="__codelineno-18-13"></a><span class="cm"> *     greeting {</span>
 <a id="__codelineno-18-14" name="__codelineno-18-14"></a><span class="cm"> *         enabled = true</span>
@@ -4492,23 +4487,23 @@ This is the same mechanism behind the <code class="highlight"><span class="n">va
 <a id="__codelineno-18-41" name="__codelineno-18-41"></a><span class="o">}</span>
 </code></pre></div></td></tr></table></div>
 <ol>
-<li>Maps to the <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span></code> block in <code>nextflow.config</code></li>
-<li>Required interface for config classes</li>
-<li>Both no-arg and Map constructors are needed for Nextflow to instantiate the config</li>
-<li><code>@ConfigOption</code> marks a field as a configuration option; <code>@Description</code> documents it for tooling</li>
+<li>Mapuje na blok <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="o">}</span></code> w <code>nextflow.config</code></li>
+<li>Wymagany interfejs dla klas konfiguracji</li>
+<li>Zarówno konstruktor bezargumentowy, jak i konstruktor przyjmujący Map są potrzebne, aby Nextflow mógł tworzyć instancje konfiguracji</li>
+<li><code>@ConfigOption</code> oznacza pole jako opcję konfiguracji; <code>@Description</code> dokumentuje je dla narzędzi</li>
 </ol>
-<p>Key points:</p>
+<p>Kluczowe punkty:</p>
 <ul>
-<li><strong><code>@ScopeName('greeting')</code></strong>: Maps to the <code>greeting { }</code> block in config</li>
-<li><strong><code>implements ConfigScope</code></strong>: Required interface for config classes</li>
-<li><strong><code>@ConfigOption</code></strong>: Each field becomes a configuration option</li>
-<li><strong><code>@Description</code></strong>: Documents each option for language server support (imported from <code>nextflow.script.dsl</code>)</li>
-<li><strong>Constructors</strong>: Both no-arg and Map constructors are needed</li>
+<li><strong><code>@ScopeName('greeting')</code></strong>: Mapuje na blok <code>greeting { }</code> w konfiguracji</li>
+<li><strong><code>implements ConfigScope</code></strong>: Wymagany interfejs dla klas konfiguracji</li>
+<li><strong><code>@ConfigOption</code></strong>: Każde pole staje się opcją konfiguracji</li>
+<li><strong><code>@Description</code></strong>: Dokumentuje każdą opcję dla wsparcia serwera językowego (importowane z <code>nextflow.script.dsl</code>)</li>
+<li><strong>Konstruktory</strong>: Potrzebne są zarówno konstruktor bezargumentowy, jak i konstruktor przyjmujący Map</li>
 </ul>
-<h3 id="32-register-the-config-class">3.2. Register the config class<a class="headerlink" href="#32-register-the-config-class" title="Permanent link">&para;</a></h3>
-<p>Creating the class is not enough on its own.
-Nextflow needs to know it exists, so you register it in <code>build.gradle</code> alongside the other extension points.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">After</label><label for="__tabbed_3_2">Before</label></div>
+<h3 id="32-rejestracja-klasy-konfiguracji">3.2. Rejestracja klasy konfiguracji<a class="headerlink" href="#32-rejestracja-klasy-konfiguracji" title="Permanent link">&para;</a></h3>
+<p>Samo utworzenie klasy nie wystarczy.
+Nextflow musi wiedzieć o jej istnieniu, więc rejestrujesz ją w <code>build.gradle</code> obok pozostałych punktów rozszerzenia.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Po</label><label for="__tabbed_3_2">Przed</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><span class="filename">build.gradle</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">extensionPoints</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span>
@@ -4527,62 +4522,62 @@ Nextflow needs to know it exists, so you register it in <code>build.gradle</code
 </div>
 </div>
 </div>
-<p>Note the difference between the factory and extension points registration:</p>
+<p>Zwróć uwagę na różnicę między rejestracją fabryki a punktów rozszerzenia:</p>
 <ul>
-<li><strong><code>extensionPoints</code> in <code>build.gradle</code></strong>: Compile-time registration. Tells the Nextflow plugin system which classes implement extension points.</li>
-<li><strong>Factory <code>create()</code> method</strong>: Runtime registration. The factory creates observer instances when a workflow actually starts.</li>
+<li><strong><code>extensionPoints</code> w <code>build.gradle</code></strong>: Rejestracja w czasie kompilacji. Informuje system pluginów Nextflow'a, które klasy implementują punkty rozszerzenia.</li>
+<li><strong>Metoda <code>create()</code> fabryki</strong>: Rejestracja w czasie wykonania. Fabryka tworzy instancje obserwatorów, gdy workflow faktycznie startuje.</li>
 </ul>
-<h3 id="33-build-and-test">3.3. Build and test<a class="headerlink" href="#33-build-and-test" title="Permanent link">&para;</a></h3>
+<h3 id="33-budowanie-i-testowanie">3.3. Budowanie i testowanie<a class="headerlink" href="#33-budowanie-i-testowanie" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="nb">cd</span><span class="w"> </span>nf-greeting<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>install<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
 <a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>nextflow<span class="w"> </span>run<span class="w"> </span>greet.nf<span class="w"> </span>-ansi-log<span class="w"> </span><span class="nb">false</span>
 </code></pre></div>
-<p>The pipeline behavior is identical, but the "Unrecognized config option" warning is gone.</p>
+<p>Zachowanie pipeline'u jest identyczne, ale ostrzeżenie „Unrecognized config option" zniknęło.</p>
 <div class="admonition note">
-<p class="admonition-title">What changed and what didn't</p>
-<p>Your <code>GreetingFactory</code> and <code>GreetingExtension</code> still use <code>session.config.navigate()</code> to read values at runtime.
-None of that code changed.
-The <code>ConfigScope</code> class is a parallel declaration that tells Nextflow what options exist.
-Both pieces are needed: <code>ConfigScope</code> declares, <code>navigate()</code> reads.</p>
+<p class="admonition-title">Uwaga</p>
+<p><code>GreetingFactory</code> i <code>GreetingExtension</code> nadal używają <code>session.config.navigate()</code> do odczytu wartości w czasie wykonania.
+Żaden z tych fragmentów kodu nie uległ zmianie.
+Klasa <code>ConfigScope</code> to równoległa deklaracja, która informuje Nextflow'a o dostępnych opcjach.
+Obie części są potrzebne: <code>ConfigScope</code> deklaruje, <code>navigate()</code> odczytuje.</p>
 </div>
-<p>Your plugin now has the same structure as the plugins you used in Part 1.
-When nf-schema exposes a <code class="highlight"><span class="n">validation</span><span class="w"> </span><span class="o">{}</span></code> block or nf-co2footprint exposes a <code class="highlight"><span class="n">co2footprint</span><span class="w"> </span><span class="o">{}</span></code> block, they use exactly this pattern: a <code>ConfigScope</code> class with annotated fields, registered as an extension point.
-Your <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{}</span></code> block works the same way.</p>
+<p>Twój plugin ma teraz taką samą strukturę jak pluginy używane w Części 1.
+Gdy nf-schema udostępnia blok <code class="highlight"><span class="n">validation</span><span class="w"> </span><span class="o">{}</span></code>, a nf-co2footprint udostępnia blok <code class="highlight"><span class="n">co2footprint</span><span class="w"> </span><span class="o">{}</span></code>, używają dokładnie tego wzorca: klasy <code>ConfigScope</code> z adnotowanymi polami, zarejestrowanej jako punkt rozszerzenia.
+Twój blok <code class="highlight"><span class="n">greeting</span><span class="w"> </span><span class="o">{}</span></code> działa w ten sam sposób.</p>
 <hr />
-<h2 id="takeaway">Takeaway<a class="headerlink" href="#takeaway" title="Permanent link">&para;</a></h2>
-<p>You learned that:</p>
+<h2 id="podsumowanie">Podsumowanie<a class="headerlink" href="#podsumowanie" title="Permanent link">&para;</a></h2>
+<p>Nauczyłeś się, że:</p>
 <ul>
-<li><code>session.config.navigate()</code> <strong>reads</strong> config values at runtime</li>
-<li><code>@ConfigScope</code> classes <strong>declare</strong> what config options exist; they work alongside <code>navigate()</code>, not instead of it</li>
-<li>Configuration can be applied to both observers and extension functions</li>
-<li>Instance variables must be declared before use in Groovy/Java; <code>init()</code> populates them from config when the plugin loads</li>
+<li><code>session.config.navigate()</code> <strong>odczytuje</strong> wartości konfiguracji w czasie wykonania</li>
+<li>Klasy <code>@ConfigScope</code> <strong>deklarują</strong> dostępne opcje konfiguracji; działają obok <code>navigate()</code>, a nie zamiast niego</li>
+<li>Konfigurację można stosować zarówno do obserwatorów, jak i funkcji rozszerzenia</li>
+<li>Zmienne instancji muszą być zadeklarowane przed użyciem w Groovy/Javie; <code>init()</code> wypełnia je wartościami z konfiguracji podczas ładowania pluginu</li>
 </ul>
 <table>
 <thead>
 <tr>
-<th>Use case</th>
-<th>Recommended approach</th>
+<th>Przypadek użycia</th>
+<th>Zalecane podejście</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Quick prototype or simple plugin</td>
-<td><code>session.config.navigate()</code> only</td>
+<td>Szybki prototyp lub prosty plugin</td>
+<td>Tylko <code>session.config.navigate()</code></td>
 </tr>
 <tr>
-<td>Production plugin with many options</td>
-<td>Add a <code>ConfigScope</code> class alongside your <code>navigate()</code> calls</td>
+<td>Plugin produkcyjny z wieloma opcjami</td>
+<td>Dodaj klasę <code>ConfigScope</code> obok wywołań <code>navigate()</code></td>
 </tr>
 <tr>
-<td>Plugin you'll share publicly</td>
-<td>Add a <code>ConfigScope</code> class alongside your <code>navigate()</code> calls</td>
+<td>Plugin przeznaczony do publicznego udostępnienia</td>
+<td>Dodaj klasę <code>ConfigScope</code> obok wywołań <code>navigate()</code></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="whats-next">What's next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
-<p>Your plugin now has all the pieces of a production plugin: custom functions, trace observers, and user-facing configuration.
-The final step is packaging it for distribution.</p>
-<p><a class="md-button md-button--primary" href="../summary/">Continue to Summary <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p><style type="text/css">.quiz {
+<h2 id="co-dalej">Co dalej?<a class="headerlink" href="#co-dalej" title="Permanent link">&para;</a></h2>
+<p>Twój plugin ma teraz wszystkie elementy pluginu produkcyjnego: własne funkcje, obserwatory śladów i konfigurację dostępną dla użytkowników.
+Ostatnim krokiem jest przygotowanie go do dystrybucji.</p>
+<p><a class="md-button md-button--primary" href="../summary/">Przejdź do Podsumowania <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p><style type="text/css">.quiz {
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem 0;
@@ -6280,7 +6275,7 @@ window.mkdocsQuizConfig = {
       <nav class="md-footer__inner md-grid" aria-label="Stopka" >
         
           
-          <a href="../05_observers/" class="md-footer__link md-footer__link--prev" aria-label="Poprzednia strona: Part 5: Trace Observers">
+          <a href="../05_observers/" class="md-footer__link md-footer__link--prev" aria-label="Poprzednia strona: Część 5: Obserwatory śladów">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -6290,20 +6285,20 @@ window.mkdocsQuizConfig = {
                 Poprzednia strona
               </span>
               <div class="md-ellipsis">
-                Part 5: Trace Observers
+                Część 5: Obserwatory śladów
               </div>
             </div>
           </a>
         
         
           
-          <a href="../summary/" class="md-footer__link md-footer__link--next" aria-label="Następna strona: Summary">
+          <a href="../summary/" class="md-footer__link md-footer__link--next" aria-label="Następna strona: Podsumowanie">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Następna strona
               </span>
               <div class="md-ellipsis">
-                Summary
+                Podsumowanie
               </div>
             </div>
             <div class="md-footer__button md-icon">

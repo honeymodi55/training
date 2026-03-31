@@ -4658,7 +4658,7 @@
 </code></pre></div>
 <p>또한 설정 파일 스텁이 포함된 <code>tests</code> 디렉토리가 생성됩니다.</p>
 <h3 id="11-nf-test">1.1. nf-test 생성<a class="headerlink" href="#11-nf-test" title="Permanent link">&para;</a></h3>
-<p><code>nf-test</code>에는 nf-test 파일을 구축하는 도구 세트가 포함되어 있어 대부분의 작업을 절약할 수 있습니다. 이는 <code>generate</code> 하위 명령어로 제공됩니다. 파이프라인에 대한 테스트를 생성해 보겠습니다:</p>
+<p><code>nf-test</code>에는 nf-test 파일을 구축하는 도구 세트가 포함되어 있어 대부분의 작업을 절약할 수 있습니다. 이는 <code>generate</code> 하위 명령어로 제공됩니다. 파이프라인에 대한 테스트를 생성합니다:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>nf-test<span class="w"> </span>generate<span class="w"> </span>pipeline<span class="w"> </span>main.nf
 </code></pre></div>
 <div class="highlight"><span class="filename">Output</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="go">&gt; nf-test generate pipeline main.nf</span>
@@ -4726,7 +4726,7 @@
 </ol>
 <p>나중에 더 많은 assertion과 구체적인 테스트 케이스를 추가할 때, 각 테스트가 무엇을 검증하는지 명확히 하기 위해 이러한 설명적인 이름을 사용하겠습니다.</p>
 <h3 id="12">1.2. 테스트 실행<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
-<p>테스트를 실행하여 어떤 일이 일어나는지 확인해 보겠습니다.</p>
+<p>테스트를 실행하여 어떤 일이 일어나는지 확인합니다.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>nf-test<span class="w"> </span><span class="nb">test</span><span class="w"> </span>tests/main.nf.test
 </code></pre></div>
 <div class="highlight"><span class="filename">nf-test pipeline fail</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="go">&gt; nf-test test tests/main.nf.test</span>
@@ -4777,7 +4777,7 @@
 <div class="highlight"><span class="filename">Error</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="go">ERROR ~ No such file or directory: /workspaces/training/side-quests/nf-test/.nf-test/tests/693ba951a20fec36a5a9292ed1cc8a9f/greetings.csv</span>
 </code></pre></div>
 <p>문제가 무엇이었을까요? 파이프라인에는 프로젝트 디렉토리에 greetings.csv 파일이 있습니다. nf-test가 파이프라인을 실행할 때 이 파일을 찾으려 하지만 찾을 수 없습니다. 파일은 있는데 무슨 일이 일어나고 있는 걸까요? 경로를 보면 테스트가 <code>./nf-test/tests/longHashString/</code> 경로에서 실행되고 있음을 알 수 있습니다. Nextflow와 마찬가지로 nf-test는 모든 것을 격리된 상태로 유지하기 위해 각 테스트에 대한 새 디렉토리를 생성합니다. 데이터 파일이 그 안에 없으므로 원래 테스트에서 파일 경로를 수정해야 합니다.</p>
-<p>테스트 파일로 돌아가서 <code>when</code> 블록의 파일 경로를 변경해 보겠습니다.</p>
+<p>테스트 파일로 돌아가서 <code>when</code> 블록의 파일 경로를 변경합니다.</p>
 <p>테스트에서 파이프라인의 루트를 어떻게 가리킬지 궁금할 것입니다. 이는 일반적인 상황이므로 nf-test에는 작업을 쉽게 만들어 주는 다양한 전역 변수가 있습니다. 전체 목록은 <a href="https://www.nf-test.com/docs/testcases/global_variables/">여기</a>에서 확인할 수 있으며, 지금은 파이프라인 프로젝트의 루트를 의미하는 <code>projectDir</code> 변수를 사용하겠습니다.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">후</label><label for="__tabbed_1_2">전</label></div>
 <div class="tabbed-content">
@@ -4809,7 +4809,7 @@
 </div>
 </div>
 </div>
-<p>테스트를 다시 실행하여 작동하는지 확인해 보겠습니다.</p>
+<p>테스트를 다시 실행하여 작동하는지 확인합니다.</p>
 <div class="highlight"><span class="filename">nf-test pipeline pass</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>nf-test<span class="w"> </span><span class="nb">test</span><span class="w"> </span>tests/main.nf.test
 </code></pre></div>
 <div class="highlight"><span class="filename">Pipeline passes</span><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="go">&gt; nf-test test tests/main.nf.test</span>
@@ -4856,7 +4856,7 @@
 </code></pre></div>
 <h3 id="13-assertion">1.3. Assertion 추가<a class="headerlink" href="#13-assertion" title="Permanent link">&para;</a></h3>
 <p>간단한 확인 방법은 파이프라인이 예상하는 모든 process를 실행하고 있으며 아무것도 자동으로 건너뛰지 않는지 확인하는 것입니다. 파이프라인은 3개의 인사말 각각에 대해 <code>sayHello</code>와 <code>convertToUpper</code>라는 총 6개의 process를 실행합니다.</p>
-<p>파이프라인이 예상한 수의 process를 실행하는지 확인하는 assertion을 테스트에 추가해 보겠습니다. 또한 테스트 이름을 테스트하는 내용을 더 잘 반영하도록 업데이트하겠습니다.</p>
+<p>파이프라인이 예상한 수의 process를 실행하는지 확인하는 assertion을 테스트에 추가합니다. 또한 테스트 이름을 테스트하는 내용을 더 잘 반영하도록 업데이트합니다.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">후</label><label for="__tabbed_2_2">전</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -4920,7 +4920,7 @@
 </div>
 </div>
 <p>이제 테스트 이름이 실제로 검증하는 내용을 더 잘 반영합니다. 단순히 파이프라인이 실패 없이 실행되는지뿐만 아니라 예상한 수의 process가 실행되는지도 확인합니다.</p>
-<p>테스트를 다시 실행하여 작동하는지 확인해 보겠습니다.</p>
+<p>테스트를 다시 실행하여 작동하는지 확인합니다.</p>
 <div class="highlight"><span class="filename">nf-test pipeline pass</span><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>nf-test<span class="w"> </span><span class="nb">test</span><span class="w"> </span>tests/main.nf.test
 </code></pre></div>
 <div class="highlight"><span class="filename">Pipeline passes with assertions</span><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="go">🚀 nf-test 0.9.3</span>
@@ -4937,7 +4937,7 @@
 </code></pre></div>
 <p>성공입니다! 파이프라인이 성공적으로 실행되고 테스트가 통과됩니다. 이제 파이프라인의 전체 상태뿐만 아니라 세부 사항도 테스트하기 시작했습니다.</p>
 <h3 id="14">1.4. 출력 테스트<a class="headerlink" href="#14" title="Permanent link">&para;</a></h3>
-<p>출력 파일이 생성되었는지 확인하는 assertion을 테스트에 추가해 보겠습니다. 결과를 더 쉽게 해석할 수 있도록 설명적인 이름과 함께 별도의 테스트로 추가하겠습니다.</p>
+<p>출력 파일이 생성되었는지 확인하는 assertion을 테스트에 추가합니다. 결과를 더 쉽게 해석할 수 있도록 설명적인 이름과 함께 별도의 테스트로 추가합니다.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">후</label><label for="__tabbed_3_2">전</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -5066,10 +5066,10 @@
 <p>Nextflow process를 테스트하는 방법을 학습합니다.</p>
 <hr />
 <h2 id="2-nextflow-process">2. Nextflow process 테스트<a class="headerlink" href="#2-nextflow-process" title="Permanent link">&para;</a></h2>
-<p>파이프라인의 모든 부분에 대한 테스트를 작성할 필요는 없지만, 테스트가 많을수록 파이프라인에 대해 더 포괄적으로 확인할 수 있고 예상대로 작동한다는 확신을 가질 수 있습니다. 이 섹션에서는 파이프라인의 두 process를 개별 단위로 테스트하겠습니다.</p>
+<p>파이프라인의 모든 부분에 대한 테스트를 작성할 필요는 없지만, 테스트가 많을수록 파이프라인에 대해 더 포괄적으로 확인할 수 있고 예상대로 작동한다는 확신을 가질 수 있습니다. 이 섹션에서는 파이프라인의 두 process를 개별 단위로 테스트합니다.</p>
 <h3 id="21-sayhello-process">2.1. <code>sayHello</code> process 테스트<a class="headerlink" href="#21-sayhello-process" title="Permanent link">&para;</a></h3>
-<p><code>sayHello</code> process부터 시작해 보겠습니다.</p>
-<p><code>nf-test generate</code> 명령어를 다시 사용하여 process에 대한 테스트를 생성해 보겠습니다.</p>
+<p><code>sayHello</code> process부터 시작합니다.</p>
+<p><code>nf-test generate</code> 명령어를 다시 사용하여 process에 대한 테스트를 생성합니다.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>nf-test<span class="w"> </span>generate<span class="w"> </span>process<span class="w"> </span>main.nf
 </code></pre></div>
 <div class="highlight"><span class="filename">Output</span><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="go">&gt; nf-test generate process main.nf</span>
@@ -5080,7 +5080,7 @@
 <a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>
 <a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a><span class="go">SUCCESS: Generated 2 test files.</span>
 </code></pre></div>
-<p>지금은 <code>main.sayhello.nf.test</code> 파일의 <code>sayhello</code> process에 집중하겠습니다.</p>
+<p>지금은 <code>main.sayhello.nf.test</code> 파일의 <code>sayhello</code> process에 집중합니다.</p>
 <p>파일을 열어 내용을 살펴보겠습니다.</p>
 <div class="highlight"><span class="filename">tests/main.sayhello.nf.test</span><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="n">nextflow_process</span><span class="w"> </span><span class="o">{</span>
 <a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>
@@ -5113,7 +5113,7 @@
 <a id="__codelineno-33-29" name="__codelineno-33-29" href="#__codelineno-33-29"></a><span class="o">}</span>
 </code></pre></div>
 <p>이전과 마찬가지로 테스트 세부 정보로 시작하고 <code>when</code> 및 <code>then</code> 블록이 이어집니다. 그러나 process에 대한 입력을 정의할 수 있는 추가적인 <code>process</code> 블록도 있습니다.</p>
-<p>테스트를 실행하여 작동하는지 확인해 보겠습니다.</p>
+<p>테스트를 실행하여 작동하는지 확인합니다.</p>
 <div class="highlight"><span class="filename">nf-test pipeline pass</span><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>nf-test<span class="w"> </span><span class="nb">test</span><span class="w"> </span>tests/main.sayhello.nf.test
 </code></pre></div>
 <div class="highlight"><span class="filename">Process test fails</span><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="go">&gt; nf-test test tests/main.sayhello.nf.test</span>
@@ -5141,7 +5141,7 @@
 <a id="__codelineno-35-23" name="__codelineno-35-23" href="#__codelineno-35-23"></a>
 <a id="__codelineno-35-24" name="__codelineno-35-24" href="#__codelineno-35-24"></a><span class="go">FAILURE: Executed 1 tests in 4.884s (1 failed)</span>
 </code></pre></div>
-<p><code>sayHello</code> process가 1개의 입력을 선언했지만 0개의 인자로 호출되었기 때문에 테스트가 실패합니다. process에 입력을 추가하여 이를 수정해 보겠습니다. <a href="../hello_nextflow/03_hello_workflow.md">Hello Workflow</a>(및 위의 준비 운동 섹션)에서 <code>sayHello</code> process가 단일 값 입력을 받는다는 것을 기억하세요. 이를 제공해야 합니다. 또한 테스트 이름을 테스트하는 내용을 더 잘 반영하도록 수정해야 합니다.</p>
+<p><code>sayHello</code> process가 1개의 입력을 선언했지만 0개의 인자로 호출되었기 때문에 테스트가 실패합니다. process에 입력을 추가하여 이를 수정합니다. <a href="../hello_nextflow/03_hello_workflow.md">Hello Workflow</a>(및 위의 준비 운동 섹션)에서 <code>sayHello</code> process가 단일 값 입력을 받는다는 것을 기억하세요. 이를 제공해야 합니다. 또한 테스트 이름을 테스트하는 내용을 더 잘 반영하도록 수정합니다.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">후</label><label for="__tabbed_4_2">전</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -5232,7 +5232,7 @@
 </div>
 </div>
 </div>
-<p>테스트를 다시 실행하여 작동하는지 확인해 보겠습니다.</p>
+<p>테스트를 다시 실행하여 작동하는지 확인합니다.</p>
 <div class="highlight"><span class="filename">nf-test pipeline pass</span><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="go">&gt; nf-test test tests/main.sayhello.nf.test</span>
 <a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>
 <a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="go">🚀 nf-test 0.9.3</span>
@@ -5395,7 +5395,7 @@
 <li>테스트 실패 시 더 나은 오류 메시지를 제공합니다</li>
 <li>더 복잡한 검증(regex 패턴, 수치 비교 등)을 허용합니다</li>
 </ul>
-<p>테스트를 실행하여 작동하는지 확인해 보겠습니다.</p>
+<p>테스트를 실행하여 작동하는지 확인합니다.</p>
 <div class="highlight"><span class="filename">nf-test pipeline pass</span><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>nf-test<span class="w"> </span><span class="nb">test</span><span class="w"> </span>tests/main.sayhello.nf.test
 </code></pre></div>
 <div class="highlight"><span class="filename">Process test fails</span><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="go">&gt; nf-test test tests/main.sayhello.nf.test</span>
@@ -5451,7 +5451,7 @@
 <li>기존 data/greetings.csv 파일을 재사용할 수 있습니다</li>
 <li>테스트 내에서 즉석으로 생성할 수 있습니다</li>
 </ul>
-<p>지금은 파이프라인 수준 테스트에서 사용한 예시를 활용하여 기존 data/greetings.csv 파일을 재사용하겠습니다. 이전과 마찬가지로 테스트하는 내용을 더 잘 반영하도록 테스트 이름을 지정할 수 있지만, 이번에는 (다른 process에서 했던 것처럼) 특정 문자열을 확인하는 대신 콘텐츠를 '스냅샷'으로 남겨두겠습니다.</p>
+<p>지금은 파이프라인 수준 테스트에서 사용한 예시를 활용하여 기존 data/greetings.csv 파일을 재사용합니다. 이전과 마찬가지로 테스트하는 내용을 더 잘 반영하도록 테스트 이름을 지정할 수 있지만, 이번에는 (다른 process에서 했던 것처럼) 특정 문자열을 확인하는 대신 콘텐츠를 '스냅샷'으로 남겨두겠습니다.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">후</label><label for="__tabbed_6_2">전</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -5588,7 +5588,7 @@
 <h2 id="3">3. 전체 저장소에 대한 테스트 실행<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <p>각 컴포넌트에 대해 nf-test를 실행하는 것도 좋지만, 번거롭고 오류가 발생하기 쉽습니다. 모든 것을 한 번에 테스트할 수는 없을까요?</p>
 <p>할 수 있습니다!</p>
-<p>전체 저장소에 대해 nf-test를 실행해 보겠습니다.</p>
+<p>전체 저장소에 대해 nf-test를 실행합니다.</p>
 <h3 id="31-nf-test">3.1. 전체 저장소에 대해 nf-test 실행<a class="headerlink" href="#31-nf-test" title="Permanent link">&para;</a></h3>
 <p><code>nf-test test</code> 명령어를 실행하여 전체 저장소에 대해 nf-test를 실행할 수 있습니다.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>nf-test<span class="w"> </span><span class="nb">test</span><span class="w"> </span>.

@@ -47,7 +47,7 @@
     
     
       
-        <title>Part 5: Trace Observers - training.nextflow.io</title>
+        <title>Partie 5 : Observateurs de trace - training.nextflow.io</title>
       
     
     
@@ -157,7 +157,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#part-5-trace-observers" class="md-skip">
+        <a href="#partie-5-observateurs-de-trace" class="md-skip">
           Aller au contenu
         </a>
       
@@ -196,7 +196,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Part 5: Trace Observers
+              Partie 5 : Observateurs de trace
             
           </span>
         </div>
@@ -2345,7 +2345,7 @@
   <span class="md-ellipsis">
     
   
-    Development Environment
+    Environnement de développement
   
 
     
@@ -2373,7 +2373,7 @@
   <span class="md-ellipsis">
     
   
-    Essential Nextflow Scripting Patterns
+    Index
   
 
     
@@ -2401,7 +2401,7 @@
   <span class="md-ellipsis">
     
   
-    Metadata and meta maps
+    Métadonnées et meta maps
   
 
     
@@ -2429,7 +2429,7 @@
   <span class="md-ellipsis">
     
   
-    Splitting and Grouping
+    Séparation et regroupement
   
 
     
@@ -2457,7 +2457,7 @@
   <span class="md-ellipsis">
     
   
-    Testing with nf-test
+    Tests avec nf-test
   
 
     
@@ -2485,7 +2485,7 @@
   <span class="md-ellipsis">
     
   
-    Workflows of Workflows
+    Workflows de Workflows
   
 
     
@@ -2513,7 +2513,7 @@
   <span class="md-ellipsis">
     
   
-    File input processing
+    Traitement des fichiers en entrée
   
 
     
@@ -2541,7 +2541,7 @@
   <span class="md-ellipsis">
     
   
-    Debugging Workflows
+    Débogage des Workflows
   
 
     
@@ -2582,7 +2582,7 @@
   <span class="md-ellipsis">
     
   
-    Plugin Development
+    Développement de plugins
   
 
     
@@ -2598,7 +2598,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Plugin Development
+    Développement de plugins
   
 
           </label>
@@ -2618,7 +2618,7 @@
   <span class="md-ellipsis">
     
   
-    Plugin Development
+    Développement de plugins
   
 
     
@@ -2646,7 +2646,7 @@
   <span class="md-ellipsis">
     
   
-    Part 1: Plugin Basics
+    Partie 1 : Les bases des plugins
   
 
     
@@ -2674,7 +2674,7 @@
   <span class="md-ellipsis">
     
   
-    Part 2: Create a Plugin Project
+    Partie 2 : Créer un projet de plugin
   
 
     
@@ -2702,7 +2702,7 @@
   <span class="md-ellipsis">
     
   
-    Part 3: Custom Functions
+    Partie 3 : Fonctions personnalisées
   
 
     
@@ -2730,7 +2730,7 @@
   <span class="md-ellipsis">
     
   
-    Part 4: Testing
+    Partie 4 : Tests
   
 
     
@@ -2767,7 +2767,7 @@
   <span class="md-ellipsis">
     
   
-    Part 5: Trace Observers
+    Partie 5 : Observateurs de trace
   
 
     
@@ -2785,7 +2785,7 @@
   <span class="md-ellipsis">
     
   
-    Part 5: Trace Observers
+    Partie 5 : Observateurs de trace
   
 
     
@@ -2805,31 +2805,31 @@
   </label>
   <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
      <li class="md-nav__item">
-  <a href="#1-understanding-the-existing-trace-observer" class="md-nav__link">
+  <a href="#1-comprendre-lobservateur-de-trace-existant" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Understanding the existing trace observer
+        1. Comprendre l'observateur de trace existant
       
     </span>
   </a>
   
 </li>  <li class="md-nav__item">
-  <a href="#2-add-a-task-counter-observer" class="md-nav__link">
+  <a href="#2-ajouter-un-observateur-de-comptage-de-taches" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Add a task counter observer
+        2. Ajouter un observateur de comptage de tâches
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Add a task counter observer">
+    <nav class="md-nav" aria-label="2. Ajouter un observateur de comptage de tâches">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-create-a-minimal-observer" class="md-nav__link">
+  <a href="#21-creer-un-observateur-minimal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1. Create a minimal observer
+        2.1. Créer un observateur minimal
       
     </span>
   </a>
@@ -2837,10 +2837,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-register-the-observer" class="md-nav__link">
+  <a href="#22-enregistrer-lobservateur" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.2. Register the observer
+        2.2. Enregistrer l'observateur
       
     </span>
   </a>
@@ -2848,10 +2848,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-build-install-and-test" class="md-nav__link">
+  <a href="#23-compiler-installer-et-tester" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.3. Build, install, and test
+        2.3. Compiler, installer et tester
       
     </span>
   </a>
@@ -2859,10 +2859,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#24-add-counting-logic" class="md-nav__link">
+  <a href="#24-ajouter-la-logique-de-comptage" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4. Add counting logic
+        2.4. Ajouter la logique de comptage
       
     </span>
   </a>
@@ -2873,22 +2873,22 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#3-track-published-files" class="md-nav__link">
+  <a href="#3-suivre-les-fichiers-publies" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Track published files
+        3. Suivre les fichiers publiés
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Track published files">
+    <nav class="md-nav" aria-label="3. Suivre les fichiers publiés">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-add-a-publish-directory" class="md-nav__link">
+  <a href="#31-ajouter-un-repertoire-de-publication" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1. Add a publish directory
+        3.1. Ajouter un répertoire de publication
       
     </span>
   </a>
@@ -2896,10 +2896,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#32-add-the-onfilepublish-method" class="md-nav__link">
+  <a href="#32-ajouter-la-methode-onfilepublish" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.2. Add the onFilePublish method
+        3.2. Ajouter la méthode onFilePublish
       
     </span>
   </a>
@@ -2907,10 +2907,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#33-build-and-test" class="md-nav__link">
+  <a href="#33-compiler-et-tester" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.3. Build and test
+        3.3. Compiler et tester
       
     </span>
   </a>
@@ -2921,19 +2921,19 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#takeaway" class="md-nav__link">
+  <a href="#a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Takeaway
+        À retenir
       
     </span>
   </a>
   
 </li>  <li class="md-nav__item">
-  <a href="#whats-next" class="md-nav__link">
+  <a href="#et-ensuite" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What's next?
+        Et ensuite ?
       
     </span>
   </a>
@@ -3148,7 +3148,7 @@
   <span class="md-ellipsis">
     
   
-    Part 6: Configuration
+    Partie 6 : Configuration
   
 
     
@@ -3176,7 +3176,7 @@
   <span class="md-ellipsis">
     
   
-    Summary
+    Résumé
   
 
     
@@ -3204,7 +3204,7 @@
   <span class="md-ellipsis">
     
   
-    Next Steps
+    Prochaines étapes
   
 
     
@@ -3669,31 +3669,31 @@
   </label>
   <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
      <li class="md-nav__item">
-  <a href="#1-understanding-the-existing-trace-observer" class="md-nav__link">
+  <a href="#1-comprendre-lobservateur-de-trace-existant" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Understanding the existing trace observer
+        1. Comprendre l'observateur de trace existant
       
     </span>
   </a>
   
 </li>  <li class="md-nav__item">
-  <a href="#2-add-a-task-counter-observer" class="md-nav__link">
+  <a href="#2-ajouter-un-observateur-de-comptage-de-taches" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Add a task counter observer
+        2. Ajouter un observateur de comptage de tâches
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Add a task counter observer">
+    <nav class="md-nav" aria-label="2. Ajouter un observateur de comptage de tâches">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-create-a-minimal-observer" class="md-nav__link">
+  <a href="#21-creer-un-observateur-minimal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1. Create a minimal observer
+        2.1. Créer un observateur minimal
       
     </span>
   </a>
@@ -3701,10 +3701,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-register-the-observer" class="md-nav__link">
+  <a href="#22-enregistrer-lobservateur" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.2. Register the observer
+        2.2. Enregistrer l'observateur
       
     </span>
   </a>
@@ -3712,10 +3712,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-build-install-and-test" class="md-nav__link">
+  <a href="#23-compiler-installer-et-tester" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.3. Build, install, and test
+        2.3. Compiler, installer et tester
       
     </span>
   </a>
@@ -3723,10 +3723,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#24-add-counting-logic" class="md-nav__link">
+  <a href="#24-ajouter-la-logique-de-comptage" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4. Add counting logic
+        2.4. Ajouter la logique de comptage
       
     </span>
   </a>
@@ -3737,22 +3737,22 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#3-track-published-files" class="md-nav__link">
+  <a href="#3-suivre-les-fichiers-publies" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Track published files
+        3. Suivre les fichiers publiés
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Track published files">
+    <nav class="md-nav" aria-label="3. Suivre les fichiers publiés">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-add-a-publish-directory" class="md-nav__link">
+  <a href="#31-ajouter-un-repertoire-de-publication" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1. Add a publish directory
+        3.1. Ajouter un répertoire de publication
       
     </span>
   </a>
@@ -3760,10 +3760,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#32-add-the-onfilepublish-method" class="md-nav__link">
+  <a href="#32-ajouter-la-methode-onfilepublish" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.2. Add the onFilePublish method
+        3.2. Ajouter la méthode onFilePublish
       
     </span>
   </a>
@@ -3771,10 +3771,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#33-build-and-test" class="md-nav__link">
+  <a href="#33-compiler-et-tester" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.3. Build and test
+        3.3. Compiler et tester
       
     </span>
   </a>
@@ -3785,19 +3785,19 @@
     </nav>
   
 </li>  <li class="md-nav__item">
-  <a href="#takeaway" class="md-nav__link">
+  <a href="#a-retenir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Takeaway
+        À retenir
       
     </span>
   </a>
   
 </li>  <li class="md-nav__item">
-  <a href="#whats-next" class="md-nav__link">
+  <a href="#et-ensuite" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What's next?
+        Et ensuite ?
       
     </span>
   </a>
@@ -4060,26 +4060,21 @@
 </a>
  
 
-<h1 id="part-5-trace-observers">Part 5: Trace Observers<a class="headerlink" href="#part-5-trace-observers" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Translation in Progress</p>
-<p>This page has not yet been translated into your language.
-You are viewing the original English content.</p>
-<p>Want to help? See our <a href="https://github.com/nextflow-io/training/blob/master/TRANSLATING.md">translation guide</a>.</p>
-</div>
-<p>Trace observers let your plugin respond to workflow events, such as a task completing, a file being published, or the pipeline finishing.
-This enables use cases like custom reports, Slack notifications, metrics collection, or integration with external monitoring systems.
-In this section, you'll build an observer that counts completed tasks and prints a summary.</p>
+<h1 id="partie-5-observateurs-de-trace">Partie 5 : Observateurs de trace<a class="headerlink" href="#partie-5-observateurs-de-trace" title="Permanent link">&para;</a></h1>
+<p><span class="ai-translation-notice"><span class="twemoji ai-translation-notice-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2z"/></svg></span> Traduction assistée par IA - <a href="https://github.com/nextflow-io/training/blob/master/TRANSLATING.md">en savoir plus et suggérer des améliorations</a></span></p>
+<p>Les observateurs de trace permettent à votre plugin de répondre aux événements du workflow, comme la fin d'une tâche, la publication d'un fichier, ou la fin du pipeline.
+Cela permet des cas d'usage tels que des rapports personnalisés, des notifications Slack, la collecte de métriques, ou l'intégration avec des systèmes de surveillance externes.
+Dans cette section, vous allez créer un observateur qui compte les tâches terminées et affiche un résumé.</p>
 <div class="admonition tip">
-<p class="admonition-title">Starting from here?</p>
-<p>If you're joining at this part, copy the solution from Part 4 to use as your starting point:</p>
+<p class="admonition-title">Astuce</p>
+<p>Si vous commencez à partir de cette partie, copiez la solution de la Partie 4 pour l'utiliser comme point de départ :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cp<span class="w"> </span>-r<span class="w"> </span>solutions/4-build-and-test/*<span class="w"> </span>.
 </code></pre></div>
 </div>
 <hr />
-<h2 id="1-understanding-the-existing-trace-observer">1. Understanding the existing trace observer<a class="headerlink" href="#1-understanding-the-existing-trace-observer" title="Permanent link">&para;</a></h2>
-<p>The "Pipeline is starting!" message when you ran the pipeline came from the <code>GreetingObserver</code> class in your plugin.</p>
-<p>Look at the observer code:</p>
+<h2 id="1-comprendre-lobservateur-de-trace-existant">1. Comprendre l'observateur de trace existant<a class="headerlink" href="#1-comprendre-lobservateur-de-trace-existant" title="Permanent link">&para;</a></h2>
+<p>Le message "Pipeline is starting!" affiché lors de l'exécution du pipeline provient de la classe <code>GreetingObserver</code> de votre plugin.</p>
+<p>Examinez le code de l'observateur :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cat<span class="w"> </span>nf-greeting/src/main/groovy/training/plugin/GreetingObserver.groovy
 </code></pre></div>
 <div class="highlight"><span class="filename">Output</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cm">/*</span>
@@ -4125,60 +4120,60 @@ In this section, you'll build an observer that counts completed tasks and prints
 <a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a><span class="o">}</span>
 </code></pre></div>
 <ol>
-<li>Interface for hooking into workflow lifecycle events</li>
-<li>Called when the workflow starts; receives the session for accessing config</li>
-<li>Called when the workflow finishes successfully</li>
+<li>Interface permettant de s'accrocher aux événements du cycle de vie du workflow</li>
+<li>Appelée au démarrage du workflow ; reçoit la session pour accéder à la configuration</li>
+<li>Appelée lorsque le workflow se termine avec succès</li>
 </ol>
-<p>There are two things to notice here:</p>
+<p>Deux éléments sont à noter ici :</p>
 <ol>
-<li><strong><code>class GreetingObserver implements TraceObserver</code></strong>: <code>TraceObserver</code> is an interface defined by Nextflow. If your class implements this interface, Nextflow can hook into it and call your methods when events happen.</li>
-<li><strong><code>@Override</code></strong>: The <code>TraceObserver</code> interface defines methods like <code>onFlowCreate</code> and <code>onFlowComplete</code>. When you write methods with these names and add the <code>@Override</code> annotation, Nextflow calls them at the appropriate time. Any methods you don't override are ignored.</li>
+<li><strong><code>class GreetingObserver implements TraceObserver</code></strong> : <code>TraceObserver</code> est une interface définie par Nextflow. Si votre classe implémente cette interface, Nextflow peut s'y accrocher et appeler vos méthodes lorsque des événements se produisent.</li>
+<li><strong><code>@Override</code></strong> : L'interface <code>TraceObserver</code> définit des méthodes comme <code>onFlowCreate</code> et <code>onFlowComplete</code>. Lorsque vous écrivez des méthodes portant ces noms et que vous ajoutez l'annotation <code>@Override</code>, Nextflow les appelle au moment approprié. Toutes les méthodes que vous ne surchargez pas sont ignorées.</li>
 </ol>
-<p>The full set of lifecycle events you can hook into at the time of writing are:</p>
+<p>L'ensemble complet des événements du cycle de vie auxquels vous pouvez vous accrocher au moment de la rédaction est le suivant :</p>
 <table>
 <thead>
 <tr>
-<th>Method</th>
-<th>When it's called</th>
+<th>Méthode</th>
+<th>Moment d'appel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>onFlowCreate</code></td>
-<td>Workflow starts</td>
+<td>Démarrage du workflow</td>
 </tr>
 <tr>
 <td><code>onFlowComplete</code></td>
-<td>Workflow finishes</td>
+<td>Fin du workflow</td>
 </tr>
 <tr>
 <td><code>onProcessStart</code></td>
-<td>A task begins execution</td>
+<td>Début d'exécution d'une tâche</td>
 </tr>
 <tr>
 <td><code>onProcessComplete</code></td>
-<td>A task finishes</td>
+<td>Fin d'une tâche</td>
 </tr>
 <tr>
 <td><code>onProcessCached</code></td>
-<td>A cached task is reused</td>
+<td>Réutilisation d'une tâche en cache</td>
 </tr>
 <tr>
 <td><code>onFilePublish</code></td>
-<td>A file is published</td>
+<td>Publication d'un fichier</td>
 </tr>
 </tbody>
 </table>
-<p>For a complete list, see the <a href="https://github.com/nextflow-io/nextflow/blob/master/modules/nextflow/src/main/groovy/nextflow/trace/TraceObserver.groovy">TraceObserver interface</a> in the Nextflow source.</p>
+<p>Pour une liste complète, consultez l'<a href="https://github.com/nextflow-io/nextflow/blob/master/modules/nextflow/src/main/groovy/nextflow/trace/TraceObserver.groovy">interface TraceObserver</a> dans le code source de Nextflow.</p>
 <hr />
-<h2 id="2-add-a-task-counter-observer">2. Add a task counter observer<a class="headerlink" href="#2-add-a-task-counter-observer" title="Permanent link">&para;</a></h2>
-<p>The goal is to build an observer that counts completed tasks and prints a summary at the end.
-Adding a new observer to a plugin requires two things: writing the observer class, and registering it in the factory so Nextflow loads it.</p>
-<h3 id="21-create-a-minimal-observer">2.1. Create a minimal observer<a class="headerlink" href="#21-create-a-minimal-observer" title="Permanent link">&para;</a></h3>
-<p>Create a new file:</p>
+<h2 id="2-ajouter-un-observateur-de-comptage-de-taches">2. Ajouter un observateur de comptage de tâches<a class="headerlink" href="#2-ajouter-un-observateur-de-comptage-de-taches" title="Permanent link">&para;</a></h2>
+<p>L'objectif est de créer un observateur qui compte les tâches terminées et affiche un résumé à la fin.
+L'ajout d'un nouvel observateur à un plugin nécessite deux choses : écrire la classe de l'observateur, et l'enregistrer dans la factory pour que Nextflow la charge.</p>
+<h3 id="21-creer-un-observateur-minimal">2.1. Créer un observateur minimal<a class="headerlink" href="#21-creer-un-observateur-minimal" title="Permanent link">&para;</a></h3>
+<p>Créez un nouveau fichier :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>touch<span class="w"> </span>nf-greeting/src/main/groovy/training/plugin/TaskCounterObserver.groovy
 </code></pre></div>
-<p>Start with the simplest possible observer that prints a message when any task completes:</p>
+<p>Commencez par l'observateur le plus simple possible, qui affiche un message lorsqu'une tâche se termine :</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">nf-greeting/src/main/groovy/training/plugin/TaskCounterObserver.groovy</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
@@ -4204,7 +4199,7 @@ Adding a new observer to a plugin requires two things: writing the observer clas
 <a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="kn">import</span><span class="w"> </span><span class="nn">nextflow.trace.TraceRecord</span>
 <a id="__codelineno-4-7" name="__codelineno-4-7"></a>
 <a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="cm">/**</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="cm"> * Observer that responds to task completion</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="cm"> * Observateur qui réagit à la fin des tâches</span>
 <a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="cm"> */</span>
 <a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="nd">@CompileStatic</span>
 <a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="kd">class</span><span class="w"> </span><span class="nc">TaskCounterObserver</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">TraceObserver</span><span class="w"> </span><span class="o">{</span><span class="w">  </span><span class="c1">// (2)!</span>
@@ -4216,19 +4211,19 @@ Adding a new observer to a plugin requires two things: writing the observer clas
 <a id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="o">}</span>
 </code></pre></div></td></tr></table></div>
 <ol>
-<li>Import the required classes: <code>TraceObserver</code>, <code>TaskHandler</code>, and <code>TraceRecord</code></li>
-<li>Create a class that <code>implements TraceObserver</code></li>
-<li>Override <code>onProcessComplete</code> to run code when a task finishes</li>
+<li>Importez les classes requises : <code>TraceObserver</code>, <code>TaskHandler</code> et <code>TraceRecord</code></li>
+<li>Créez une classe qui <code>implements TraceObserver</code></li>
+<li>Surchargez <code>onProcessComplete</code> pour exécuter du code lorsqu'une tâche se termine</li>
 </ol>
-<p>This is the minimum needed:</p>
+<p>Voici le minimum nécessaire :</p>
 <ul>
-<li>Import the required classes (<code>TraceObserver</code>, <code>TaskHandler</code>, <code>TraceRecord</code>)</li>
-<li>Create a class that <code>implements TraceObserver</code></li>
-<li>Override <code>onProcessComplete</code> to do something when a task finishes</li>
+<li>Importer les classes requises (<code>TraceObserver</code>, <code>TaskHandler</code>, <code>TraceRecord</code>)</li>
+<li>Créer une classe qui <code>implements TraceObserver</code></li>
+<li>Surcharger <code>onProcessComplete</code> pour effectuer une action lorsqu'une tâche se termine</li>
 </ul>
-<h3 id="22-register-the-observer">2.2. Register the observer<a class="headerlink" href="#22-register-the-observer" title="Permanent link">&para;</a></h3>
-<p>The <code>GreetingFactory</code> creates observers.
-Take a look at it:</p>
+<h3 id="22-enregistrer-lobservateur">2.2. Enregistrer l'observateur<a class="headerlink" href="#22-enregistrer-lobservateur" title="Permanent link">&para;</a></h3>
+<p>La <code>GreetingFactory</code> crée les observateurs.
+Examinez-la :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>cat<span class="w"> </span>nf-greeting/src/main/groovy/training/plugin/GreetingFactory.groovy
 </code></pre></div>
 <div class="highlight"><span class="filename">Output</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cm">/*</span>
@@ -4264,8 +4259,8 @@ Take a look at it:</p>
 <a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a>
 <a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a><span class="o">}</span>
 </code></pre></div>
-<p>Edit <code>GreetingFactory.groovy</code> to add the new observer:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">After</label><label for="__tabbed_1_2">Before</label></div>
+<p>Modifiez <code>GreetingFactory.groovy</code> pour ajouter le nouvel observateur :</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Après</label><label for="__tabbed_1_2">Avant</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">GreetingFactory.groovy</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-31">31</a></span>
@@ -4296,21 +4291,21 @@ Take a look at it:</p>
 </div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Groovy list syntax</p>
-<p>We've replaced the Java-style <code>List.&lt;TraceObserver&gt;of(...)</code> with Groovy's simpler list literal <code>[...]</code>.
-Both return a <code>Collection</code>, but the Groovy syntax is more readable when adding multiple items.</p>
+<p class="admonition-title">Syntaxe de liste Groovy</p>
+<p>Nous avons remplacé le style Java <code>List.&lt;TraceObserver&gt;of(...)</code> par le littéral de liste Groovy plus simple <code>[...]</code>.
+Les deux retournent une <code>Collection</code>, mais la syntaxe Groovy est plus lisible lorsqu'on ajoute plusieurs éléments.</p>
 </div>
-<h3 id="23-build-install-and-test">2.3. Build, install, and test<a class="headerlink" href="#23-build-install-and-test" title="Permanent link">&para;</a></h3>
+<h3 id="23-compiler-installer-et-tester">2.3. Compiler, installer et tester<a class="headerlink" href="#23-compiler-installer-et-tester" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">cd</span><span class="w"> </span>nf-greeting<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>install<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>nextflow<span class="w"> </span>run<span class="w"> </span>greet.nf<span class="w"> </span>-ansi-log<span class="w"> </span><span class="nb">false</span>
 </code></pre></div>
 <div class="admonition tip">
-<p class="admonition-title">Why <code>-ansi-log false</code>?</p>
-<p>By default, Nextflow's ANSI progress display overwrites previous lines to show a clean, updating view of progress.
-This means you'd only see the <em>final</em> task count, not the intermediate messages.</p>
-<p>Using <code>-ansi-log false</code> disables this behavior and shows all output sequentially, which is essential when testing observers that print messages during execution.</p>
+<p class="admonition-title">Pourquoi <code>-ansi-log false</code> ?</p>
+<p>Par défaut, l'affichage de progression ANSI de Nextflow écrase les lignes précédentes pour afficher une vue propre et actualisée de la progression.
+Cela signifie que vous ne verriez que le <em>dernier</em> comptage de tâches, et non les messages intermédiaires.</p>
+<p>L'utilisation de <code>-ansi-log false</code> désactive ce comportement et affiche toutes les sorties de manière séquentielle, ce qui est indispensable lors du test d'observateurs qui affichent des messages pendant l'exécution.</p>
 </div>
-<p>You should see "✓ Task completed!" printed five times (once per task), interleaved with the existing pipeline output:</p>
+<p>Vous devriez voir "✓ Task completed!" affiché cinq fois (une fois par tâche), entremêlé avec la sortie existante du pipeline :</p>
 <div class="highlight"><span class="filename">Output (partial)</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="go">...</span>
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="go">[9b/df7630] Submitted process &gt; SAY_HELLO (4)</span>
 <a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="go">Decorated: *** Hello ***</span>
@@ -4321,21 +4316,21 @@ This means you'd only see the <em>final</em> task count, not the intermediate me
 <a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="go">...</span>
 <a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="go">Pipeline complete! 👋</span>
 </code></pre></div>
-<p>The observer is working.
-Each time a task finishes, Nextflow calls <code>onProcessComplete</code>, and our implementation prints a message.</p>
+<p>L'observateur fonctionne.
+Chaque fois qu'une tâche se termine, Nextflow appelle <code>onProcessComplete</code>, et notre implémentation affiche un message.</p>
 <details class="exercise">
-<summary>Customize the message</summary>
-<p>Try changing the message in <code>onProcessComplete</code> to something of your own, rebuild, and rerun.
-This confirms the full edit-build-run cycle works for observers.</p>
+<summary>Personnaliser le message</summary>
+<p>Essayez de modifier le message dans <code>onProcessComplete</code> avec quelque chose de votre choix, recompilez et relancez.
+Cela confirme que le cycle complet modification-compilation-exécution fonctionne pour les observateurs.</p>
 </details>
-<h3 id="24-add-counting-logic">2.4. Add counting logic<a class="headerlink" href="#24-add-counting-logic" title="Permanent link">&para;</a></h3>
-<p>The minimal observer proves the hook works, but it doesn't track anything.</p>
-<p>A class can hold variables (called fields or instance variables) that persist for the lifetime of the object.
-This means an observer can accumulate state across multiple events during a pipeline run.</p>
-<p>The next version adds a counter variable (<code>taskCount</code>) that starts at zero.
-Each time a task completes, the counter goes up by one.
-When the entire workflow finishes, the observer prints the final total.</p>
-<p>Update <code>TaskCounterObserver.groovy</code> with the highlighted changes:</p>
+<h3 id="24-ajouter-la-logique-de-comptage">2.4. Ajouter la logique de comptage<a class="headerlink" href="#24-ajouter-la-logique-de-comptage" title="Permanent link">&para;</a></h3>
+<p>L'observateur minimal prouve que le hook fonctionne, mais il ne suit rien.</p>
+<p>Une classe peut contenir des variables (appelées champs ou variables d'instance) qui persistent pendant toute la durée de vie de l'objet.
+Cela signifie qu'un observateur peut accumuler un état à travers plusieurs événements pendant l'exécution d'un pipeline.</p>
+<p>La version suivante ajoute une variable compteur (<code>taskCount</code>) qui commence à zéro.
+Chaque fois qu'une tâche se termine, le compteur augmente d'une unité.
+Lorsque l'ensemble du workflow se termine, l'observateur affiche le total final.</p>
+<p>Mettez à jour <code>TaskCounterObserver.groovy</code> avec les modifications mises en évidence :</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">nf-greeting/src/main/groovy/training/plugin/TaskCounterObserver.groovy</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
@@ -4369,7 +4364,7 @@ When the entire workflow finishes, the observer prints the final total.</p>
 <a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="kn">import</span><span class="w"> </span><span class="nn">nextflow.trace.TraceRecord</span>
 <a id="__codelineno-11-7" name="__codelineno-11-7"></a>
 <a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="cm">/**</span>
-<a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="cm"> * Observer that counts completed tasks</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="cm"> * Observateur qui compte les tâches terminées</span>
 <a id="__codelineno-11-10" name="__codelineno-11-10"></a><span class="cm"> */</span>
 <a id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="nd">@CompileStatic</span>
 <a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="kd">class</span><span class="w"> </span><span class="nc">TaskCounterObserver</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">TraceObserver</span><span class="w"> </span><span class="o">{</span>
@@ -4389,22 +4384,22 @@ When the entire workflow finishes, the observer prints the final total.</p>
 <a id="__codelineno-11-26" name="__codelineno-11-26"></a><span class="o">}</span>
 </code></pre></div></td></tr></table></div>
 <ol>
-<li><code>taskCount</code> is a variable that belongs to the observer object. It keeps its value between method calls, so it can accumulate a count across the whole workflow run. <code>private</code> means only this class can access it.</li>
-<li><code>taskCount++</code> adds one to the counter. This line runs every time a task completes, so the count grows as the workflow progresses.</li>
-<li><code>onFlowComplete</code> is a second lifecycle hook. It runs once when the workflow finishes, making it a good place to print a summary.</li>
+<li><code>taskCount</code> est une variable qui appartient à l'objet observateur. Elle conserve sa valeur entre les appels de méthodes, ce qui lui permet d'accumuler un comptage sur l'ensemble de l'exécution du workflow. <code>private</code> signifie que seule cette classe peut y accéder.</li>
+<li><code>taskCount++</code> ajoute un au compteur. Cette ligne s'exécute chaque fois qu'une tâche se termine, de sorte que le comptage augmente au fur et à mesure de la progression du workflow.</li>
+<li><code>onFlowComplete</code> est un second hook du cycle de vie. Il s'exécute une fois lorsque le workflow se termine, ce qui en fait un bon endroit pour afficher un résumé.</li>
 </ol>
-<p>In summary:</p>
+<p>En résumé :</p>
 <ul>
-<li><code>taskCount</code> persists across method calls, accumulating a count over the whole run</li>
-<li><code>onProcessComplete</code> increments the counter and prints the running total each time a task finishes</li>
-<li><code>onFlowComplete</code> runs once at the end, printing the final count</li>
+<li><code>taskCount</code> persiste entre les appels de méthodes, accumulant un comptage sur toute l'exécution</li>
+<li><code>onProcessComplete</code> incrémente le compteur et affiche le total courant chaque fois qu'une tâche se termine</li>
+<li><code>onFlowComplete</code> s'exécute une fois à la fin, affichant le comptage final</li>
 </ul>
-<p>Rebuild and test:</p>
+<p>Recompilez et testez :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">cd</span><span class="w"> </span>nf-greeting<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>install<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
 <a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>nextflow<span class="w"> </span>run<span class="w"> </span>greet.nf<span class="w"> </span>-ansi-log<span class="w"> </span><span class="nb">false</span>
 </code></pre></div>
 <details class="example">
-<summary>Output</summary>
+<summary>Sortie</summary>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="go">N E X T F L O W  ~  version 25.10.2</span>
 <a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="go">Launching `greet.nf` [pensive_engelbart] DSL2 - revision: 85fefd90d0</span>
 <a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="go">Pipeline is starting! 🚀</span>
@@ -4431,15 +4426,15 @@ When the entire workflow finishes, the observer prints the final total.</p>
 <a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="go">Pipeline complete! 👋</span>
 <a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a><span class="go">📈 Final task count: 5</span>
 </code></pre></div>
-<p>The counter messages are interleaved with task submissions because observers run as tasks complete.</p>
+<p>Les messages du compteur sont entremêlés avec les soumissions de tâches car les observateurs s'exécutent au fur et à mesure que les tâches se terminent.</p>
 </details>
 <hr />
-<h2 id="3-track-published-files">3. Track published files<a class="headerlink" href="#3-track-published-files" title="Permanent link">&para;</a></h2>
-<p>The observer can also respond when files are published.
-The <code>onFilePublish</code> method receives the destination and source paths, which you can use to log, validate, or process published outputs.</p>
-<h3 id="31-add-a-publish-directory">3.1. Add a publish directory<a class="headerlink" href="#31-add-a-publish-directory" title="Permanent link">&para;</a></h3>
-<p>First, update <code>greet.nf</code> so the <code>SAY_HELLO</code> process publishes its output files:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">After</label><label for="__tabbed_2_2">Before</label></div>
+<h2 id="3-suivre-les-fichiers-publies">3. Suivre les fichiers publiés<a class="headerlink" href="#3-suivre-les-fichiers-publies" title="Permanent link">&para;</a></h2>
+<p>L'observateur peut également réagir lorsque des fichiers sont publiés.
+La méthode <code>onFilePublish</code> reçoit les chemins de destination et de source, que vous pouvez utiliser pour journaliser, valider ou traiter les sorties publiées.</p>
+<h3 id="31-ajouter-un-repertoire-de-publication">3.1. Ajouter un répertoire de publication<a class="headerlink" href="#31-ajouter-un-repertoire-de-publication" title="Permanent link">&para;</a></h3>
+<p>Tout d'abord, mettez à jour <code>greet.nf</code> pour que le processus <code>SAY_HELLO</code> publie ses fichiers de sortie :</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Après</label><label for="__tabbed_2_2">Avant</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">greet.nf</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-10">10</a></span>
@@ -4461,7 +4456,7 @@ The <code>onFilePublish</code> method receives the destination and source paths,
 <a id="__codelineno-14-14" name="__codelineno-14-14"></a><span class="w">    </span><span class="nl">output:</span>
 <a id="__codelineno-14-15" name="__codelineno-14-15"></a><span class="w">        </span><span class="n">path</span><span class="w"> </span><span class="s1">&#39;greeting.txt&#39;</span>
 <a id="__codelineno-14-16" name="__codelineno-14-16"></a><span class="w">    </span><span class="nl">script:</span>
-<a id="__codelineno-14-17" name="__codelineno-14-17"></a><span class="w">    </span><span class="c1">// Use our custom plugin function to decorate the greeting</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17"></a><span class="w">    </span><span class="c1">// Utilise notre fonction de plugin personnalisée pour décorer le message</span>
 <a id="__codelineno-14-18" name="__codelineno-14-18"></a><span class="w">    </span><span class="kt">def</span><span class="w"> </span><span class="n">decorated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">decorateGreeting</span><span class="o">(</span><span class="n">greeting</span><span class="o">)</span>
 <a id="__codelineno-14-19" name="__codelineno-14-19"></a><span class="w">    </span><span class="s2">&quot;&quot;&quot;</span>
 <a id="__codelineno-14-20" name="__codelineno-14-20"></a><span class="s2">    echo &#39;$decorated&#39; &gt; greeting.txt</span>
@@ -4487,7 +4482,7 @@ The <code>onFilePublish</code> method receives the destination and source paths,
 <a id="__codelineno-15-13" name="__codelineno-15-13"></a><span class="w">    </span><span class="nl">output:</span>
 <a id="__codelineno-15-14" name="__codelineno-15-14"></a><span class="w">        </span><span class="n">path</span><span class="w"> </span><span class="s1">&#39;greeting.txt&#39;</span>
 <a id="__codelineno-15-15" name="__codelineno-15-15"></a><span class="w">    </span><span class="nl">script:</span>
-<a id="__codelineno-15-16" name="__codelineno-15-16"></a><span class="w">    </span><span class="c1">// Use our custom plugin function to decorate the greeting</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16"></a><span class="w">    </span><span class="c1">// Utilise notre fonction de plugin personnalisée pour décorer le message</span>
 <a id="__codelineno-15-17" name="__codelineno-15-17"></a><span class="w">    </span><span class="kt">def</span><span class="w"> </span><span class="n">decorated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">decorateGreeting</span><span class="o">(</span><span class="n">greeting</span><span class="o">)</span>
 <a id="__codelineno-15-18" name="__codelineno-15-18"></a><span class="w">    </span><span class="s2">&quot;&quot;&quot;</span>
 <a id="__codelineno-15-19" name="__codelineno-15-19"></a><span class="s2">    echo &#39;$decorated&#39; &gt; greeting.txt</span>
@@ -4497,8 +4492,8 @@ The <code>onFilePublish</code> method receives the destination and source paths,
 </div>
 </div>
 </div>
-<h3 id="32-add-the-onfilepublish-method">3.2. Add the onFilePublish method<a class="headerlink" href="#32-add-the-onfilepublish-method" title="Permanent link">&para;</a></h3>
-<p>Add an <code>onFilePublish</code> method and the required import to <code>TaskCounterObserver.groovy</code>:</p>
+<h3 id="32-ajouter-la-methode-onfilepublish">3.2. Ajouter la méthode onFilePublish<a class="headerlink" href="#32-ajouter-la-methode-onfilepublish" title="Permanent link">&para;</a></h3>
+<p>Ajoutez une méthode <code>onFilePublish</code> et l'import requis à <code>TaskCounterObserver.groovy</code> :</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">nf-greeting/src/main/groovy/training/plugin/TaskCounterObserver.groovy</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-16-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-16-3"> 3</a></span>
@@ -4539,7 +4534,7 @@ The <code>onFilePublish</code> method receives the destination and source paths,
 <a id="__codelineno-16-7" name="__codelineno-16-7"></a><span class="kn">import</span><span class="w"> </span><span class="nn">nextflow.trace.TraceRecord</span>
 <a id="__codelineno-16-8" name="__codelineno-16-8"></a>
 <a id="__codelineno-16-9" name="__codelineno-16-9"></a><span class="cm">/**</span>
-<a id="__codelineno-16-10" name="__codelineno-16-10"></a><span class="cm"> * Observer that counts completed tasks</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10"></a><span class="cm"> * Observateur qui compte les tâches terminées</span>
 <a id="__codelineno-16-11" name="__codelineno-16-11"></a><span class="cm"> */</span>
 <a id="__codelineno-16-12" name="__codelineno-16-12"></a><span class="nd">@CompileStatic</span>
 <a id="__codelineno-16-13" name="__codelineno-16-13"></a><span class="kd">class</span><span class="w"> </span><span class="nc">TaskCounterObserver</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">TraceObserver</span><span class="w"> </span><span class="o">{</span>
@@ -4563,11 +4558,11 @@ The <code>onFilePublish</code> method receives the destination and source paths,
 <a id="__codelineno-16-31" name="__codelineno-16-31"></a><span class="w">    </span><span class="o">}</span>
 <a id="__codelineno-16-32" name="__codelineno-16-32"></a><span class="o">}</span>
 </code></pre></div></td></tr></table></div>
-<h3 id="33-build-and-test">3.3. Build and test<a class="headerlink" href="#33-build-and-test" title="Permanent link">&para;</a></h3>
+<h3 id="33-compiler-et-tester">3.3. Compiler et tester<a class="headerlink" href="#33-compiler-et-tester" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nb">cd</span><span class="w"> </span>nf-greeting<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>install<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
 <a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>nextflow<span class="w"> </span>run<span class="w"> </span>greet.nf<span class="w"> </span>-ansi-log<span class="w"> </span><span class="nb">false</span>
 </code></pre></div>
-<p>You should see "Published:" messages for each output file alongside the task counter output:</p>
+<p>Vous devriez voir des messages "Published:" pour chaque fichier de sortie, aux côtés de la sortie du compteur de tâches :</p>
 <div class="highlight"><span class="filename">Output (partial)</span><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="go">...</span>
 <a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="go">📊 Tasks completed so far: 1</span>
 <a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="go">📁 Published: greeting.txt</span>
@@ -4577,23 +4572,23 @@ The <code>onFilePublish</code> method receives the destination and source paths,
 <a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="go">📈 Final task count: 5</span>
 <a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="go">Pipeline complete! 👋</span>
 </code></pre></div>
-<p>The <code>onFilePublish</code> method fires each time Nextflow publishes a file to the <code>results</code> directory.
-This pattern is useful for building audit logs, triggering downstream actions, or validating outputs as they are produced.</p>
+<p>La méthode <code>onFilePublish</code> se déclenche chaque fois que Nextflow publie un fichier dans le répertoire <code>results</code>.
+Ce modèle est utile pour créer des journaux d'audit, déclencher des actions en aval, ou valider les sorties au fur et à mesure de leur production.</p>
 <hr />
-<h2 id="takeaway">Takeaway<a class="headerlink" href="#takeaway" title="Permanent link">&para;</a></h2>
-<p>You learned that:</p>
+<h2 id="a-retenir">À retenir<a class="headerlink" href="#a-retenir" title="Permanent link">&para;</a></h2>
+<p>Vous avez appris que :</p>
 <ul>
-<li>Trace observers hook into workflow lifecycle events like <code>onFlowCreate</code>, <code>onProcessComplete</code>, <code>onFilePublish</code>, and <code>onFlowComplete</code></li>
-<li>Create observers by implementing <code>TraceObserver</code> and registering them in a Factory</li>
-<li>Observers can hold instance variables to accumulate state across events</li>
-<li>Observers are useful for custom logging, metrics collection, notifications, and reporting</li>
+<li>Les observateurs de trace s'accrochent aux événements du cycle de vie du workflow comme <code>onFlowCreate</code>, <code>onProcessComplete</code>, <code>onFilePublish</code> et <code>onFlowComplete</code></li>
+<li>On crée des observateurs en implémentant <code>TraceObserver</code> et en les enregistrant dans une Factory</li>
+<li>Les observateurs peuvent contenir des variables d'instance pour accumuler un état à travers les événements</li>
+<li>Les observateurs sont utiles pour la journalisation personnalisée, la collecte de métriques, les notifications et les rapports</li>
 </ul>
 <hr />
-<h2 id="whats-next">What's next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
-<p>The task counter works, but it's always on.
-In a real plugin, users should be able to enable or disable features, or adjust behavior, from <code>nextflow.config</code> without editing the plugin source code.
-The next section shows how to make your observer configurable and how to share your finished plugin with others.</p>
-<p><a class="md-button md-button--primary" href="../06_configuration/">Continue to Part 6 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p><style type="text/css">.quiz {
+<h2 id="et-ensuite">Et ensuite ?<a class="headerlink" href="#et-ensuite" title="Permanent link">&para;</a></h2>
+<p>Le compteur de tâches fonctionne, mais il est toujours actif.
+Dans un vrai plugin, les utilisateur·trices devraient pouvoir activer ou désactiver des fonctionnalités, ou ajuster le comportement, depuis <code>nextflow.config</code> sans modifier le code source du plugin.
+La section suivante montre comment rendre votre observateur configurable et comment partager votre plugin terminé avec d'autres personnes.</p>
+<p><a class="md-button md-button--primary" href="../06_configuration/">Continuer vers la Partie 6 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a></p><style type="text/css">.quiz {
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem 0;
@@ -6291,7 +6286,7 @@ window.mkdocsQuizConfig = {
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../04_build_and_test/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Part 4: Testing">
+          <a href="../04_build_and_test/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Partie 4 : Tests">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -6301,20 +6296,20 @@ window.mkdocsQuizConfig = {
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Part 4: Testing
+                Partie 4 : Tests
               </div>
             </div>
           </a>
         
         
           
-          <a href="../06_configuration/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Part 6: Configuration">
+          <a href="../06_configuration/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Partie 6 : Configuration">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Part 6: Configuration
+                Partie 6 : Configuration
               </div>
             </div>
             <div class="md-footer__button md-icon">
